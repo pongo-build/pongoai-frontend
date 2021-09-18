@@ -20,5 +20,5 @@ jobs:
         displayName: lint
 
         - script: |
-          yarn build
+          yarn test
         displayName: test
