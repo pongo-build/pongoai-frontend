@@ -8,5 +8,5 @@ steps:
   - task: YarnInstaller@0
     displayName: 'Install Yarn'
     inputs:
-      versionSpec: '>=1.22.x',
+      versionSpec: '>=1.22.x'
       checkLatest: true
