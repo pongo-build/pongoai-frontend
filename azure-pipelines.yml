@@ -1,0 +1,16 @@
+pr:
+  - master
+
+jobs:
+  - job: BuildTestLint
+    workspace:
+      clean: all
+    steps:
+      - template: .devops/templates/tools.yml
+      - script: |
+          yarn lint
+        displayName: lint
+
+      - script: |
+          yarn buildci --no-cache $(sinceArg)
+        displayName: build, test, lint
