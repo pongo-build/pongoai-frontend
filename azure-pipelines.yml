@@ -1,16 +1,24 @@
 pr:
   - master
 
+pool:
+  vmImage: ubuntu-latest
+
 jobs:
   - job: BuildTestLint
     workspace:
       clean: all
     steps:
       - template: .devops/templates/tools.yml
+    
+      - script: |
+          yarn build
+        displayName: build
+
       - script: |
           yarn lint
         displayName: lint
 
-      - script: |
-          yarn buildci --no-cache $(sinceArg)
-        displayName: build, test, lint
+        - script: |
+          yarn test
+        displayName: test
