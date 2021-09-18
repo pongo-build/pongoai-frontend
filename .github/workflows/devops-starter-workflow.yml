@@ -1,8 +1,7 @@
 name: Build and Deploy static website app to azure
 on:
-  push:
-    branches:
-      - master
+  pull_request:
+    types: [opened, edited, review_requested]
 
 env:
   AZURE_WEBAPP_NAME: "PongoAI-Web"    # set this to your application's name
