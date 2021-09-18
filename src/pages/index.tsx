@@ -5,9 +5,9 @@ import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="flex flex-col items-center justify-center min-h-screen py-2 ">
     <Head>
-      <title>PongoA</title>
+      <title>PongoAI</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
@@ -15,7 +15,7 @@ const Home: NextPage = () => {
       <h1 className="text-6xl font-bold">
         Welcome to{' '}
         <a className="text-indigo-600" href="https://nextjs.org">
-          PongoAI!
+          PongoAI App!
         </a>
       </h1>
 
