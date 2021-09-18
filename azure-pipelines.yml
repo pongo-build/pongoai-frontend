@@ -1,6 +1,7 @@
-pr:
-  - master
-
+on:
+  pull_request:
+    types: [opened, edited, review_requested]
+    
 pool:
   vmImage: ubuntu-latest
 
