@@ -13,6 +13,10 @@ jobs:
       - template: .devops/templates/tools.yml
     
       - script: |
+          yarn
+        displayName: yarn
+        
+      - script: |
           yarn build
         displayName: build
 
