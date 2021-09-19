@@ -4,10 +4,3 @@ steps:
     inputs:
       versionSpec: '>=16.x'
       checkLatest: true
-
-  - task: YarnInstaller@3
-    displayName: 'Install Yarn'
-    inputs:
-      versionSpec: 1.22.x
-      checkLatest: false
-      includePrerelease: false
