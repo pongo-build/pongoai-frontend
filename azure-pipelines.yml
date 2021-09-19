@@ -3,6 +3,8 @@ pr:
 
 trigger: none
 
+pool: Default
+
 jobs:
   - job: BuildTestLint
     workspace:
