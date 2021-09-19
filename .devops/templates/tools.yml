@@ -5,7 +5,7 @@ steps:
       versionSpec: '>=16.x'
       checkLatest: true
 
-  - task: YarnInstaller@0
+  - task: geeklearningio.gl-vsts-tasks-yarn.yarn-task.Yarn@2
     displayName: 'Install Yarn'
     inputs:
       versionSpec: '>=1.22.x'
