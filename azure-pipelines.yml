@@ -1,6 +1,6 @@
 pr:
   - master
-  
+
 trigger: none
 
 pool:
@@ -21,6 +21,6 @@ jobs:
           yarn lint
         displayName: lint
 
-        - script: |
+      - script: |
           yarn test
         displayName: test
