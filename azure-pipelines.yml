@@ -24,6 +24,6 @@ jobs:
           yarn lint
         displayName: lint
 
-      - script: |
-          yarn test
-        displayName: test
+      # - script: |
+      #     yarn test
+      #   displayName: test
