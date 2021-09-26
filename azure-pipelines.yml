@@ -1,0 +1,29 @@
+pr:
+  - master
+
+trigger: none
+
+pool: Default
+
+jobs:
+  - job: BuildTestLint
+    workspace:
+      clean: all
+    steps:
+      - template: .devops/templates/tools.yml
+    
+      - script: |
+          yarn
+        displayName: yarn
+        
+      - script: |
+          yarn build
+        displayName: build
+
+      - script: |
+          yarn lint
+        displayName: lint
+
+      # - script: |
+      #     yarn test
+      #   displayName: test
