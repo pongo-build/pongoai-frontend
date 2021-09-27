@@ -20,6 +20,7 @@
     "build": [{ "target": "build", "projects": "dependencies" }]
   },
   "projects": {
-    "pongo-landing": { "implicitDependencies": [] }
+    "pongo-landing": { "implicitDependencies": [] },
+    "pongo-dashboard": { "implicitDependencies": [] }
   }
 }

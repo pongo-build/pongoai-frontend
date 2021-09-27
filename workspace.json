@@ -4,6 +4,10 @@
     "pongo-landing": {
       "root": "packages/pongo-landing",
       "projectType": "library"
+    },
+    "pongo-dashboard": {
+      "root": "packages/pongo-dashboard",
+      "projectType": "library"
     }
   },
   "cli": {
