@@ -1,0 +1,25 @@
+{
+  "name": "pongo-ui",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "nx run pongo-landing:serve",
+    "build": "nx run-many --target=build --all",
+    "test": "nx run-many --target=test --all",
+    "lint": "nx run-many --target=lint --all"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.20",
+    "autoprefixer": "^10.3.4",
+    "eslint": "7.32.0",
+    "webpack-dev-server": "3.11.1",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.15",
+    "typescript": "4.4.3"
+  }
+}
