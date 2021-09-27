@@ -5,5 +5,8 @@
       "root": "packages/pongo-landing",
       "projectType": "library"
     }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/next"
   }
 }

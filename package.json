@@ -4,18 +4,43 @@
   "private": true,
   "scripts": {
     "start": "nx run pongo-landing:serve",
-    "build": "nx run pongo-landing:build",
-    "test": "nx run pongo-landing:test",
-    "lint": "nx run pongo-landing:lint"
+    "build": "nx run-many --target=build --all",
+    "test": "nx run-many --target=test --all",
+    "lint": "nx run-many --target=lint --all"
   },
-  "dependencies": {},
+  "dependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "tslib": "^2.0.0"
+  },
   "devDependencies": {
     "@nrwl/cli": "12.9.0",
     "@nrwl/nx-cloud": "latest",
     "@nrwl/tao": "12.9.0",
     "@nrwl/workspace": "12.9.0",
     "@types/node": "14.14.33",
+    "eslint": "7.22.0",
+    "eslint-config-next": "11.1.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-cypress": "^2.10.3",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-react": "7.23.1",
+    "eslint-plugin-react-hooks": "4.2.0",
     "prettier": "^2.3.1",
     "typescript": "~4.3.5"
+  },
+  "generators": {
+    "@nrwl/react": {
+      "application": {
+        "babel": true
+      }
+    },
+    "@nrwl/next": {
+      "application": {
+        "style": "css",
+        "linter": "eslint"
+      }
+    }
   }
 }

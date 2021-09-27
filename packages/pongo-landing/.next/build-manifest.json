@@ -1,12 +1,12 @@
 {
   "polyfillFiles": [
-    "static/chunks/polyfills-a40ef1678bae11e696dba45124eadd70.js"
+    "static/chunks/polyfills-882951268485c9f704fe8a42b6d85c68.js"
   ],
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/WfgTCRdm6wEPX0C2v1UI1/_buildManifest.js",
-    "static/WfgTCRdm6wEPX0C2v1UI1/_ssgManifest.js"
+    "static/0MyMMf-kUZG8nChjAhAmg/_buildManifest.js",
+    "static/0MyMMf-kUZG8nChjAhAmg/_ssgManifest.js"
   ],
   "pages": {
     "/": [
