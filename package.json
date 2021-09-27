@@ -6,7 +6,8 @@
     "start": "nx run pongo-landing:serve",
     "build": "nx run-many --target=build --all",
     "test": "nx run-many --target=test --all",
-    "lint": "nx run-many --target=lint --all"
+    "lint": "nx run-many --target=lint --all",
+    "format": "prettier ./"
   },
   "dependencies": {
     "react": "17.0.2",
@@ -31,7 +32,7 @@
     "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-react": "7.23.1",
     "eslint-plugin-react-hooks": "4.2.0",
-    "prettier": "^2.3.1",
+    "prettier": "^2.4.1",
     "lage": "^0.33.0",
     "@types/react": "16.9.42",
     "@types/react-dom": "16.9.10",
