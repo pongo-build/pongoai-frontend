@@ -1,11 +1,15 @@
 import * as React from 'react';
-import {Rating} from './index'
+import { Rating } from './index';
 
 export const BasicRatingExample = () => {
-    return <><Rating/></>
-}
+  return (
+    <>
+      <Rating />
+    </>
+  );
+};
 
 export default {
-    title: "Components/Rating",
-    component: Rating
-}
+  title: 'Components/Rating',
+  component: Rating,
+};
