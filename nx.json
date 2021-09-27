@@ -1,0 +1,25 @@
+{
+  "npmScope": "pongoai",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "package.json": { "dependencies": "*", "devDependencies": "*" },
+    ".eslintrc.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test"],
+        "accessToken": "YmZkZTcwY2EtODRlZi00NzdkLWFlMDgtZTc2NTMwYzk4MzVmfHJlYWQtd3JpdGU="
+      }
+    }
+  },
+  "targetDependencies": {
+    "build": [{ "target": "build", "projects": "dependencies" }]
+  },
+  "projects": {
+    "pongo-landing": { "implicitDependencies": [] }
+  }
+}

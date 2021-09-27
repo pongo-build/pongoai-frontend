@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "projects": {
+    "pongo-landing": {
+      "root": "packages/pongo-landing",
+      "projectType": "library"
+    }
+  }
+}
