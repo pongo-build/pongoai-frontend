@@ -9,12 +9,9 @@
       "root": "packages/pongo-dashboard",
       "projectType": "library"
     },
-    "react-rating": {
-      "root": "packages/pongo-ui/packages/react-rating",
+    "pongo-ui": {
+      "root": "packages/pongo-ui",
       "projectType": "library"
     }
-  },
-  "cli": {
-    "defaultCollection": "@nrwl/next"
   }
 }

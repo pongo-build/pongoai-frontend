@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "projects": {
+    "react-rating": {
+      "root": "packages/react-rating",
+      "projectType": "library"
+    }
+  }
+}
