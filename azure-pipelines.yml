@@ -3,6 +3,9 @@ pr:
 
 trigger: none
 
+variables:
+  NX_BRANCH: $(System.PullRequestNumber)
+
 pool: Default
 
 jobs:
@@ -11,11 +14,11 @@ jobs:
       clean: all
     steps:
       - template: .devops/templates/tools.yml
-    
+
       - script: |
           yarn
         displayName: yarn
-        
+
       - script: |
           yarn build
         displayName: build
