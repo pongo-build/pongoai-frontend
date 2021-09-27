@@ -1,6 +1,6 @@
-/*! For license information please see main.4178683b.chunk.js.LICENSE.txt */
-(this['webpackJsonppongo-dashboard'] =
-  this['webpackJsonppongo-dashboard'] || []).push([
+/*! For license information please see main.4b179801.chunk.js.LICENSE.txt */
+(this['webpackJsonp@pongo-ui/react-rating'] =
+  this['webpackJsonp@pongo-ui/react-rating'] || []).push([
   [0],
   [
     function (e, t, r) {
@@ -50,16 +50,16 @@
       })()
         ? Object.assign
         : function (e, t) {
-            for (var r, c, a = i(e), f = 1; f < arguments.length; f++) {
+            for (var r, a, c = i(e), f = 1; f < arguments.length; f++) {
               for (var s in (r = Object(arguments[f])))
-                o.call(r, s) && (a[s] = r[s]);
+                o.call(r, s) && (c[s] = r[s]);
               if (n) {
-                c = n(r);
-                for (var l = 0; l < c.length; l++)
-                  u.call(r, c[l]) && (a[c[l]] = r[c[l]]);
+                a = n(r);
+                for (var l = 0; l < a.length; l++)
+                  u.call(r, a[l]) && (c[a[l]] = r[a[l]]);
               }
             }
-            return a;
+            return c;
           };
     },
     function (e, t, r) {
@@ -73,8 +73,8 @@
         u = 60106;
       (t.Fragment = 60107), (t.StrictMode = 60108), (t.Profiler = 60114);
       var i = 60109,
-        c = 60110,
-        a = 60112;
+        a = 60110,
+        c = 60112;
       t.Suspense = 60113;
       var f = 60115,
         s = 60116;
@@ -86,8 +86,8 @@
           (t.StrictMode = l('react.strict_mode')),
           (t.Profiler = l('react.profiler')),
           (i = l('react.provider')),
-          (c = l('react.context')),
-          (a = l('react.forward_ref')),
+          (a = l('react.context')),
+          (c = l('react.forward_ref')),
           (t.Suspense = l('react.suspense')),
           (f = l('react.memo')),
           (s = l('react.lazy'));
@@ -150,25 +150,25 @@
         var n,
           u = {},
           i = null,
-          c = null;
+          a = null;
         if (null != t)
-          for (n in (void 0 !== t.ref && (c = t.ref),
+          for (n in (void 0 !== t.ref && (a = t.ref),
           void 0 !== t.key && (i = '' + t.key),
           t))
             w.call(t, n) && !O.hasOwnProperty(n) && (u[n] = t[n]);
-        var a = arguments.length - 2;
-        if (1 === a) u.children = r;
-        else if (1 < a) {
-          for (var f = Array(a), s = 0; s < a; s++) f[s] = arguments[s + 2];
+        var c = arguments.length - 2;
+        if (1 === c) u.children = r;
+        else if (1 < c) {
+          for (var f = Array(c), s = 0; s < c; s++) f[s] = arguments[s + 2];
           u.children = f;
         }
         if (e && e.defaultProps)
-          for (n in (a = e.defaultProps)) void 0 === u[n] && (u[n] = a[n]);
+          for (n in (c = e.defaultProps)) void 0 === u[n] && (u[n] = c[n]);
         return {
           $$typeof: o,
           type: e,
           key: i,
-          ref: c,
+          ref: a,
           props: u,
           _owner: g.current,
         };
@@ -190,32 +190,32 @@
             })('' + e.key)
           : t.toString(36);
       }
-      function $(e, t, r, n, i) {
-        var c = typeof e;
-        ('undefined' !== c && 'boolean' !== c) || (e = null);
-        var a = !1;
-        if (null === e) a = !0;
+      function R(e, t, r, n, i) {
+        var a = typeof e;
+        ('undefined' !== a && 'boolean' !== a) || (e = null);
+        var c = !1;
+        if (null === e) c = !0;
         else
-          switch (c) {
+          switch (a) {
             case 'string':
             case 'number':
-              a = !0;
+              c = !0;
               break;
             case 'object':
               switch (e.$$typeof) {
                 case o:
                 case u:
-                  a = !0;
+                  c = !0;
               }
           }
-        if (a)
+        if (c)
           return (
-            (i = i((a = e))),
-            (e = '' === n ? '.' + E(a, 0) : n),
+            (i = i((c = e))),
+            (e = '' === n ? '.' + E(c, 0) : n),
             Array.isArray(i)
               ? ((r = ''),
                 null != e && (r = e.replace(k, '$&/') + '/'),
-                $(i, t, r, '', function (e) {
+                R(i, t, r, '', function (e) {
                   return e;
                 }))
               : null != i &&
@@ -232,7 +232,7 @@
                   })(
                     i,
                     r +
-                      (!i.key || (a && a.key === i.key)
+                      (!i.key || (c && c.key === i.key)
                         ? ''
                         : ('' + i.key).replace(k, '$&/') + '/') +
                       e
@@ -240,10 +240,10 @@
                 t.push(i)),
             1
           );
-        if (((a = 0), (n = '' === n ? '.' : n + ':'), Array.isArray(e)))
+        if (((c = 0), (n = '' === n ? '.' : n + ':'), Array.isArray(e)))
           for (var f = 0; f < e.length; f++) {
-            var s = n + E((c = e[f]), f);
-            a += $(c, t, r, s, i);
+            var s = n + E((a = e[f]), f);
+            c += R(a, t, r, s, i);
           }
         else if (
           ((s = (function (e) {
@@ -255,9 +255,9 @@
           })(e)),
           'function' === typeof s)
         )
-          for (e = s.call(e), f = 0; !(c = e.next()).done; )
-            a += $((c = c.value), t, r, (s = n + E(c, f++)), i);
-        else if ('object' === c)
+          for (e = s.call(e), f = 0; !(a = e.next()).done; )
+            c += R((a = a.value), t, r, (s = n + E(a, f++)), i);
+        else if ('object' === a)
           throw (
             ((t = '' + e),
             Error(
@@ -269,20 +269,20 @@
               )
             ))
           );
-        return a;
+        return c;
       }
       function C(e, t, r) {
         if (null == e) return e;
         var n = [],
           o = 0;
         return (
-          $(e, n, '', '', function (e) {
+          R(e, n, '', '', function (e) {
             return t.call(r, e, o++);
           }),
           n
         );
       }
-      function R(e) {
+      function $(e) {
         if (-1 === e._status) {
           var t = e._result;
           (t = t()),
@@ -353,11 +353,11 @@
           if (null === e || void 0 === e) throw Error(y(267, e));
           var u = n({}, e.props),
             i = e.key,
-            c = e.ref,
-            a = e._owner;
+            a = e.ref,
+            c = e._owner;
           if (null != t) {
             if (
-              (void 0 !== t.ref && ((c = t.ref), (a = g.current)),
+              (void 0 !== t.ref && ((a = t.ref), (c = g.current)),
               void 0 !== t.key && (i = '' + t.key),
               e.type && e.type.defaultProps)
             )
@@ -378,16 +378,16 @@
             $$typeof: o,
             type: e.type,
             key: i,
-            ref: c,
+            ref: a,
             props: u,
-            _owner: a,
+            _owner: c,
           };
         }),
         (t.createContext = function (e, t) {
           return (
             void 0 === t && (t = null),
             ((e = {
-              $$typeof: c,
+              $$typeof: a,
               _calculateChangedBits: t,
               _currentValue: e,
               _currentValue2: e,
@@ -407,14 +407,14 @@
           return { current: null };
         }),
         (t.forwardRef = function (e) {
-          return { $$typeof: a, render: e };
+          return { $$typeof: c, render: e };
         }),
         (t.isValidElement = S),
         (t.lazy = function (e) {
           return {
             $$typeof: s,
             _payload: { _status: -1, _result: e },
-            _init: R,
+            _init: $,
           };
         }),
         (t.memo = function (e, t) {
@@ -462,8 +462,8 @@
       var i =
           n.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED
             .ReactCurrentOwner,
-        c = Object.prototype.hasOwnProperty,
-        a = { key: !0, ref: !0, __self: !0, __source: !0 };
+        a = Object.prototype.hasOwnProperty,
+        c = { key: !0, ref: !0, __self: !0, __source: !0 };
       function f(e, t, r) {
         var n,
           u = {},
@@ -473,7 +473,7 @@
         void 0 !== t.key && (f = '' + t.key),
         void 0 !== t.ref && (s = t.ref),
         t))
-          c.call(t, n) && !a.hasOwnProperty(n) && (u[n] = t[n]);
+          a.call(t, n) && !c.hasOwnProperty(n) && (u[n] = t[n]);
         if (e && e.defaultProps)
           for (n in (t = e.defaultProps)) void 0 === u[n] && (u[n] = t[n]);
         return {
@@ -490,16 +490,17 @@
     function (e, t, r) {
       'use strict';
       r.r(t),
-        r.d(t, 'Test', function () {
-          return o;
+        r.d(t, 'Rating', function () {
+          return u;
         });
-      r(0);
-      var n = r(2),
-        o = function () {
-          return Object(n.jsx)('div', { children: 'Hello World' });
-        };
+      var n = r(0),
+        o = r(2),
+        u = n.forwardRef(function (e, t) {
+          return Object(o.jsx)('div', { children: 'Rating Control' });
+        });
+      u.displayName = 'Rating';
     },
   ],
   [[5, 1]],
 ]);
-//# sourceMappingURL=main.4178683b.chunk.js.map
+//# sourceMappingURL=main.4b179801.chunk.js.map
