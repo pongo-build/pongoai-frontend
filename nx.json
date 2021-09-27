@@ -21,6 +21,7 @@
   },
   "projects": {
     "pongo-landing": { "implicitDependencies": [] },
-    "pongo-dashboard": { "implicitDependencies": [] }
+    "pongo-dashboard": { "implicitDependencies": [] },
+    "react-rating": { "implicitDependencies": [] }
   }
 }

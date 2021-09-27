@@ -5,7 +5,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "lint": "eslint",
     "eject": "react-scripts eject"
   },

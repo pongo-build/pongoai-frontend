@@ -8,6 +8,10 @@
     "pongo-dashboard": {
       "root": "packages/pongo-dashboard",
       "projectType": "library"
+    },
+    "react-rating": {
+      "root": "packages/pongo-ui/packages/react-rating",
+      "projectType": "library"
     }
   },
   "cli": {
