@@ -7,24 +7,27 @@
     "build": "nx run-many --target=build --all",
     "test": "nx run-many --target=test --all",
     "lint": "nx run-many --target=lint --all",
-    "format": "prettier ./"
+    "format": "prettier --write ./",
+    "check-format": "prettier --check ./",
+    "prepare": "husky install"
   },
   "dependencies": {
+    "babel-jest": "^26.6.0",
+    "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "next": "11.1.2",
-    "tslib": "^2.0.0",
-    "babel-jest": "^26.6.0",
-    "react-scripts": "4.0.3"
+    "react-scripts": "4.0.3",
+    "tslib": "^2.0.0"
   },
   "devDependencies": {
-    "@types/react": "17.0.20",
     "@nrwl/cli": "12.9.0",
     "@nrwl/nx-cloud": "latest",
     "@nrwl/tao": "12.9.0",
     "@nrwl/workspace": "12.9.0",
     "@types/node": "14.14.33",
-    "webpack-dev-server": "3.11.1",
+    "@types/react": "17.0.20",
+    "@types/react-dom": "16.9.10",
+    "autoprefixer": "^10.3.4",
     "eslint": "7.22.0",
     "eslint-config-next": "11.1.0",
     "eslint-config-prettier": "8.1.0",
@@ -33,13 +36,14 @@
     "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-react": "7.23.1",
     "eslint-plugin-react-hooks": "4.2.0",
-    "prettier": "^2.4.1",
+    "git-format-staged": "^2.1.2",
+    "husky": "^7.0.0",
     "lage": "^0.33.0",
-    "autoprefixer": "^10.3.4",
     "postcss": "^8.3.6",
+    "prettier": "^2.4.1",
     "tailwindcss": "^2.2.15",
-    "@types/react-dom": "16.9.10",
-    "typescript": "~4.3.5"
+    "typescript": "~4.3.5",
+    "webpack-dev-server": "3.11.1"
   },
   "generators": {
     "@nrwl/react": {

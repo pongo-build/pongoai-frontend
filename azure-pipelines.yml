@@ -4,7 +4,7 @@ pr:
 trigger: none
 
 variables:
-  NX_BRANCH: $(System.PullRequestNumber)
+  - template: .devops/templates/variables.yml
 
 pool: Default
 
@@ -20,18 +20,13 @@ jobs:
         displayName: yarn
 
       - script: |
-          yarn build
-        displayName: build
-
-      - script: |
           yarn lint
         displayName: lint
+
+      - script: |
+          yarn build
+        displayName: build
 
       # - script: |
       #     yarn test
       #   displayName: test
-
-  - job: Format
-      - script: |
-          yarn format
-        displayName: format
