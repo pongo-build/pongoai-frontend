@@ -16,6 +16,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
+    "@fluentui/react-utilities": "9.0.0-alpha.47",
     "@nrwl/cli": "12.9.0",
     "@nrwl/nx-cloud": "latest",
     "@nrwl/tao": "12.9.0",
@@ -23,6 +24,10 @@
     "@types/node": "14.14.33",
     "@types/react": "17.0.20",
     "@types/react-dom": "16.9.10",
+    "@mui/material": "5.0.1",
+    "@mui/styles": "5.0.1",
+    "@emotion/react": "11.4.1",
+    "@emotion/styled": "11.3.0",
     "autoprefixer": "^10.3.4",
     "babel-jest": "^26.6.0",
     "eslint": "7.22.0",

@@ -16,6 +16,10 @@
     "react-rating": {
       "root": "packages/pongo-ui/packages/react-rating",
       "projectType": "library"
+    },
+    "react-theme": {
+      "root": "packages/pongo-ui/packages/react-theme",
+      "projectType": "library"
     }
   }
 }
