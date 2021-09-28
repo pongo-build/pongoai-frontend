@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useRating } from './useRating';
-import { renderSwitch } from './renderRating';
+import { renderRating } from './renderRating';
 import { useRatingStyles } from './useRatingStyles';
 import type { RatingProps } from './Rating.types';
 
@@ -9,6 +9,6 @@ export const Rating = React.forwardRef<HTMLDivElement, RatingProps>((props, ref)
 
   useRatingStyles(state);
 
-  return renderSwitch(state);
+  return renderRating(state);
 });
 Rating.displayName = 'Rating';
