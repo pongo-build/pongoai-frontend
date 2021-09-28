@@ -35,7 +35,6 @@
     "eslint-plugin-react-hooks": "4.2.0",
     "git-format-staged": "^2.1.2",
     "husky": "^7.0.0",
-    "lage": "^0.33.0",
     "next": "11.1.2",
     "postcss": "^8.3.6",
     "prettier": "^2.4.1",
