@@ -1,2 +1,3 @@
 variables:
+  NX_CLOUD_AUTH_TOKEN: 'YmZkZTcwY2EtODRlZi00NzdkLWFlMDgtZTc2NTMwYzk4MzVmfHJlYWQtd3JpdGU='
   NX_BRANCH: $(System.PullRequestNumber)
