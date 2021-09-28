@@ -2,6 +2,10 @@
   "name": "pongoai-frontend",
   "version": "0.0.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PongoAI/pongoai-frontend"
+  },
   "scripts": {
     "start": "nx run pongo-landing:serve",
     "build": "nx run-many --target=build --all",
@@ -10,14 +14,6 @@
     "format": "prettier --write ./",
     "check-format": "prettier --check ./",
     "prepare": "husky install"
-  },
-  "dependencies": {
-    "babel-jest": "^26.6.0",
-    "next": "11.1.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-scripts": "4.0.3",
-    "tslib": "^2.0.0"
   },
   "devDependencies": {
     "@nrwl/cli": "12.9.0",
@@ -28,6 +24,7 @@
     "@types/react": "17.0.20",
     "@types/react-dom": "16.9.10",
     "autoprefixer": "^10.3.4",
+    "babel-jest": "^26.6.0",
     "eslint": "7.22.0",
     "eslint-config-next": "11.1.0",
     "eslint-config-prettier": "8.1.0",
@@ -39,23 +36,19 @@
     "git-format-staged": "^2.1.2",
     "husky": "^7.0.0",
     "lage": "^0.33.0",
+    "next": "11.1.2",
     "postcss": "^8.3.6",
     "prettier": "^2.4.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-scripts": "4.0.3",
     "tailwindcss": "^2.2.15",
+    "tslib": "^2.0.0",
     "typescript": "~4.3.5",
     "webpack-dev-server": "3.11.1"
   },
-  "generators": {
-    "@nrwl/react": {
-      "application": {
-        "babel": true
-      }
-    },
-    "@nrwl/next": {
-      "application": {
-        "style": "css",
-        "linter": "eslint"
-      }
-    }
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*./": "prettier --write"
   }
 }

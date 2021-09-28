@@ -6475,7 +6475,7 @@ get-value@^2.0.3, get-value@^2.0.6:
 
 git-format-staged@^2.1.2:
   version "2.1.2"
-  resolved "https://registry.npmjs.org/git-format-staged/-/git-format-staged-2.1.2.tgz"
+  resolved "https://registry.yarnpkg.com/git-format-staged/-/git-format-staged-2.1.2.tgz#d4e47e194f39514a8754311dea85470d3e66306c"
   integrity sha512-ieP6iEyMJQ9xPKJGFSmK4HELcDdYwUO84dG4NBKdjaSTOdsZgrW9paLaEau2D4daPQjLwSsgwdqtYjqoVxz3Lw==
 
 git-up@^4.0.0:
