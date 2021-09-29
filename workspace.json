@@ -20,6 +20,10 @@
     "react-theme": {
       "root": "packages/pongo-ui/packages/react-theme",
       "projectType": "library"
+    },
+    "react-icon": {
+      "root": "packages/pongo-ui/packages/react-icon",
+      "projectType": "library"
     }
   }
 }

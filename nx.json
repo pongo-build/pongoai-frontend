@@ -24,6 +24,7 @@
     "pongo-dashboard": { "implicitDependencies": [] },
     "pongo-ui": { "implicitDependencies": [] },
     "react-rating": { "implicitDependencies": [] },
-    "react-theme": { "implicitDependencies": [] }
+    "react-theme": { "implicitDependencies": [] },
+    "react-icon": { "implicitDependencies": [] }
   }
 }
