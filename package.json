@@ -6,6 +6,7 @@
     "type": "git",
     "url": "https://github.com/PongoAI/pongoai-frontend"
   },
+  "license": "MIT",
   "scripts": {
     "start": "nx run pongo-landing:serve",
     "build": "nx run-many --target=build --all",
