@@ -1,20 +1,21 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
     "rootDir": ".",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "target": "es2015",
+    "target": "ES2015",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "moduleResolution": "node",
+    "lib": ["ES2015", "dom"],
+    "sourceMap": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
+    "typeRoots": ["node_modules/@types", "./typings"],
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@pongo/react-icon": ["packages/pongo-ui/packages/react-icon/src/index.ts"],
+      "@pongo/react-rating": ["packages/pongo-ui/packages/react-rating/src/index.ts"],
+      "@pongo/react-theme": ["packages/pongo-ui/packages/react-theme/src/index.ts"]
+    }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": ["node_modules"]
 }

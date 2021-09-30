@@ -1,5 +1,5 @@
 {
-  "name": "@pongo-ui/react-theme",
+  "name": "@pongo/react-theme",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -13,14 +13,12 @@
   "dependencies": {
     "@emotion/react": "11.4.1",
     "@emotion/styled": "11.3.0",
-    "@mui/material": "5.0.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "@mui/material": "5.0.1"
   },
   "devDependencies": {
     "@storybook/react": "^6.3.8",
-    "@types/react": "17.0.20",
     "eslint": "7.32.0",
+    "jest": "^24.0.0",
     "typescript": "4.4.3"
   }
 }

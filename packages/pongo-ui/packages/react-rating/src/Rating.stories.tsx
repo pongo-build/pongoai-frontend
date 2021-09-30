@@ -13,7 +13,7 @@ export const BasicRatingExample = () => {
   return (
     <ThemeProvider theme={webLightTheme}>
       <Rating value={ratingValue} onChange={onRatingChange} />
-      <h1> {ratingValue}</h1>
+      <h1>{ratingValue}</h1>
     </ThemeProvider>
   );
 };
