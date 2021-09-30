@@ -1,7 +1,7 @@
 {
-  "name": "@pongo/react-rating",
+  "name": "@pongo/react-button",
   "version": "0.0.0",
-  "description": "A Rating control used to provide insight on a users review for a product.",
+  "description": "A Button control that allows users to make an action through a press.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
   "typings": "lib/index.d.ts",

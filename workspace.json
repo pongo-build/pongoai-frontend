@@ -13,6 +13,10 @@
       "root": "packages/pongo-ui",
       "projectType": "library"
     },
+    "react-button": {
+      "root": "packages/pongo-ui/packages/react-button",
+      "projectType": "library"
+    },
     "react-rating": {
       "root": "packages/pongo-ui/packages/react-rating",
       "projectType": "library"

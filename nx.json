@@ -23,6 +23,7 @@
     "pongo-landing": { "implicitDependencies": [] },
     "pongo-dashboard": { "implicitDependencies": [] },
     "pongo-ui": { "implicitDependencies": [] },
+    "react-button": { "implicitDependencies": [] },
     "react-rating": { "implicitDependencies": [] },
     "react-theme": { "implicitDependencies": [] },
     "react-icon": { "implicitDependencies": [] }
