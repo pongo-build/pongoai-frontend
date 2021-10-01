@@ -26,6 +26,7 @@
     "react-button": { "implicitDependencies": [] },
     "react-rating": { "implicitDependencies": [] },
     "react-theme": { "implicitDependencies": [] },
-    "react-icon": { "implicitDependencies": [] }
+    "react-icon": { "implicitDependencies": [] },
+    "react-text": { "implicitDependencies": [] }
   }
 }

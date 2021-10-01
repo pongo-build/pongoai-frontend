@@ -1,0 +1,40 @@
+{
+  "name": "@pongoai/react-text",
+  "version": "0.0.0",
+  "description": "A Text control that standardizes font styling across a webpage.",
+  "main": "lib-commonjs/index.js",
+  "module": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PongoAI/pongoai-frontend"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn storybook",
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint",
+    "storybook": "start-storybook",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "@fluentui/react-utilities": "9.0.0-alpha.53",
+    "@mui/styles": "5.0.1",
+    "clsx": "1.1.1"
+  },
+  "devDependencies": {
+    "@fluentui/react-conformance": "^0.5.1",
+    "@storybook/react": "^6.3.8",
+    "@types/jest": "^27.0.2",
+    "@types/react": "16.8.0",
+    "@types/react-dom": "16.9.10",
+    "eslint": "7.32.0",
+    "jest": "^24.0.0",
+    "ts-jest": "^24.3.0",
+    "typescript": "4.1.5",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  }
+}

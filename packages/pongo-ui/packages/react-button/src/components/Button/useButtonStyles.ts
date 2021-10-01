@@ -13,9 +13,10 @@ const useRootStyles = makeStyles((theme: Theme) => ({
     minWidth: '60px',
     minHeight: '35px',
     transition: 'background 50ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 50ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
+    fontFamily: theme.fonts.fontFamily.base,
     fontStyle: 'normal',
-    fontWeight: 'normal',
-    fontSize: '14px',
+    fontWeight: theme.fonts.fontWeight.regular,
+    fontSize: theme.fonts.fontSize[300],
     outline: 'none',
 
     '&:focus-visible': {
@@ -117,6 +118,7 @@ const useRootStyles = makeStyles((theme: Theme) => ({
     },
     '&:active': {
       color: theme.palette.neutral1Active,
+      textDecoration: 'underline',
     },
   },
 

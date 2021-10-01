@@ -4,7 +4,7 @@
  * @type {jest.InitialOptions}
  */
 module.exports = {
-  displayName: 'react-button',
+  displayName: 'react-text',
   preset: '../../../../jest.preset.js',
   globals: {
     'ts-jest': {

@@ -15,7 +15,8 @@
       "@pongo/react-button": ["packages/pongo-ui/packages/react-button/src/index.ts"],
       "@pongo/react-icon": ["packages/pongo-ui/packages/react-icon/src/index.ts"],
       "@pongo/react-rating": ["packages/pongo-ui/packages/react-rating/src/index.ts"],
-      "@pongo/react-theme": ["packages/pongo-ui/packages/react-theme/src/index.ts"]
+      "@pongo/react-theme": ["packages/pongo-ui/packages/react-theme/src/index.ts"],
+      "@pongo/react-text": ["packages/pongo-ui/packages/react-text/src/index.ts"]
     }
   },
   "exclude": ["node_modules"]

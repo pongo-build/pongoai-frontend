@@ -28,6 +28,10 @@
     "react-icon": {
       "root": "packages/pongo-ui/packages/react-icon",
       "projectType": "library"
+    },
+    "react-text": {
+      "root": "packages/pongo-ui/packages/react-text",
+      "projectType": "library"
     }
   }
 }

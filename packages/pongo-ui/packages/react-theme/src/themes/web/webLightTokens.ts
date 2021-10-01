@@ -14,7 +14,7 @@ export const webLightTokens: ColorTokens = {
   neutral1StrokeHover: '#636364',
   neutral1StrokeActive: '#5c5c5c',
   neutral2: '#FFFFFF',
-  neutral2Hover: '#F7F8F9',
+  neutral2Hover: '#fafafa',
   neutral2Active: '#E5E5E5',
   neutral2Disabled: '#c3c3c3',
   neutral2DisabledBackground: '#fafafa',
