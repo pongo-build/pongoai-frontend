@@ -50,6 +50,7 @@ const useRootStyles = makeStyles((theme: Theme) => ({
 
   outline: {
     border: `2px solid ${theme.palette.neutral1Stroke}`,
+    background: 'none',
 
     '&:hover': {
       borderColor: theme.palette.neutral1StrokeHover,
