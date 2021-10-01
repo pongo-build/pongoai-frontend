@@ -1,8 +1,9 @@
 import { makeStyles } from '@mui/styles';
 import clsx from 'clsx';
 import type { ButtonState } from './Button.types';
+import { Theme } from '../../../../react-theme/src/index';
 
-const useRootStyles = makeStyles(() => ({
+const useRootStyles = makeStyles((theme: Theme) => ({
   root: {
     position: 'relative',
     display: 'inline-flex',
@@ -48,82 +49,80 @@ const useRootStyles = makeStyles(() => ({
   },
 
   outline: {
-    border: '2px solid #949595',
-    background: '#fafafa',
-    color: '#333333',
+    border: `2px solid ${theme.palette.neutral1Stroke}`,
 
     '&:hover': {
-      borderColor: '#636364',
+      borderColor: theme.palette.neutral1StrokeHover,
     },
     '&:active': {
-      background: '#e5e5e5',
-      borderColor: '#5c5c5c',
+      background: theme.palette.neutral2Active,
+      borderColor: theme.palette.neutral1StrokeActive,
     },
   },
 
   outlineDisabled: {
-    border: '2px solid #c3c3c3',
-    background: '#fafafa',
-    color: '#c3c3c3',
+    border: `2px solid ${theme.palette.neutral2Disabled}`,
+    background: theme.palette.neutral2DisabledBackground,
+    color: theme.palette.neutral2Disabled,
   },
 
   primary: {
-    border: '2px solid #354082',
-    background: '#586bd9',
-    color: 'white',
+    border: `2px solid ${theme.palette.brand1Stroke}`,
+    background: theme.palette.brand1,
+    color: theme.palette.neutral2,
 
     '&:hover': {
-      background: '#5164b8',
-      borderColor: '#313c6e',
+      background: theme.palette.brand1Hover,
+      borderColor: theme.palette.brand1StrokeHover,
     },
     '&:active': {
-      background: '#4a5598',
-      borderColor: '#1e223d',
+      background: theme.palette.brand1Active,
+      borderColor: theme.palette.brand1StrokeActive,
     },
   },
 
   primaryDisabled: {
-    border: '2px solid #c3c3c3',
-    background: '#fafafa',
-    color: '#c3c3c3',
+    border: `2px solid ${theme.palette.neutral2Disabled}`,
+    background: theme.palette.neutral2DisabledBackground,
+    color: theme.palette.neutral2Disabled,
   },
 
   subtle: {
     border: 'none',
     background: 'none',
-    color: '#333333',
+    color: theme.palette.neutral1,
 
     '&:hover': {
-      background: '#f7f8f9',
+      background: theme.palette.neutral2Hover,
     },
     '&:active': {
-      background: '#e5e5e5',
+      background: theme.palette.neutral2Active,
     },
   },
 
   subtleDisabled: {
     border: 'none',
     background: 'none',
-    color: '#d1d1d1',
+    color: theme.palette.neutral2Disabled,
   },
 
   transparent: {
     border: 'none',
     background: 'none',
-    color: '#333333',
+    color: theme.palette.neutral1,
     '&:hover': {
-      color: '#5164b8',
+      color: theme.palette.neutral1Hover,
       boxShadow: 'none',
     },
     '&:active': {
-      color: '#354082',
+      color: theme.palette.neutral1Active,
     },
   },
 
   transparentDisabled: {
     border: 'none',
     background: 'none',
-    color: '#d1d1d1',
+    color: theme.palette.neutral2Disabled,
   },
 
   rounded: {

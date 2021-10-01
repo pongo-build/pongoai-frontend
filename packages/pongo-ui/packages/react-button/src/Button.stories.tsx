@@ -1,8 +1,7 @@
 import * as React from 'react';
 import { Button } from './index';
-import { ThemeProvider } from '@mui/material/styles';
-import { makeStyles } from '@mui/styles';
-import { webLightTheme } from '../../react-theme/src';
+import { ThemeProvider, makeStyles } from '@mui/styles';
+import { webLightTheme } from '../../react-theme/src/index';
 
 const useStyles = makeStyles({
   root: {

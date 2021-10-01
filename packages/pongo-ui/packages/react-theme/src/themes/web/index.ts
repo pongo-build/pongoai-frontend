@@ -1,1 +1,1 @@
-export * from './webLightTheme';
+export * from './webLightTokens';
