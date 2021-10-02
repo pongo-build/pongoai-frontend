@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ChatBubbleIcon } from './index';
-import { ThemeProvider } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/styles';
 import { webLightTheme } from '../../react-theme/src';
 
 export const BasicIconExample = () => {
