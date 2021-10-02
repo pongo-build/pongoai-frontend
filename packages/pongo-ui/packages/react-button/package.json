@@ -20,7 +20,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@fluentui/react-utilities": "9.0.0-alpha.53",
+    "@fluentui/react-utilities": "9.0.0-alpha.55",
     "@mui/styles": "5.0.1",
     "clsx": "1.1.1"
   },
