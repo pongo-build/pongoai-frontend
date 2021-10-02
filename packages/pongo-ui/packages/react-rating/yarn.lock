@@ -1217,10 +1217,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fluentui/keyboard-keys@9.0.0-alpha.3":
-  version "9.0.0-alpha.3"
-  resolved "https://registry.npmjs.org/@fluentui/keyboard-keys/-/keyboard-keys-9.0.0-alpha.3.tgz"
-  integrity sha512-zW/5JWP30NS5+iYLpYCnM43vDsN48BXmwzA9UmisLLpQ1X/L3icRLM+yErPOaFrG6x5MyTBtgOekHSlWAOCuCg==
+"@fluentui/keyboard-keys@9.0.0-alpha.5":
+  version "9.0.0-alpha.5"
+  resolved "https://registry.yarnpkg.com/@fluentui/keyboard-keys/-/keyboard-keys-9.0.0-alpha.5.tgz#75b1180e64cd35e5fdeecd116384f772b7bb4ca6"
+  integrity sha512-BdbrE6gOZTZetxrv4eVeBRnePRsLALtbKBm4xflM6xIp3D6HIkP/fxwZicf00L+jv9zHv9o85eSRtVFQEXenAg==
 
 "@fluentui/react-conformance@^0.5.1":
   version "0.5.1"
@@ -1234,12 +1234,12 @@
     react-is "^16.6.3"
     tslib "^2.1.0"
 
-"@fluentui/react-utilities@9.0.0-alpha.53":
-  version "9.0.0-alpha.53"
-  resolved "https://registry.npmjs.org/@fluentui/react-utilities/-/react-utilities-9.0.0-alpha.53.tgz"
-  integrity sha512-GF9vrhrjKfXOlkMX8dS+/etm8UyeC+SwI/iTwRcpxO/9qljX6c3s186x3iHqk1hgmfrtuiYM8d704sSWVv9H+w==
+"@fluentui/react-utilities@9.0.0-alpha.55":
+  version "9.0.0-alpha.55"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-utilities/-/react-utilities-9.0.0-alpha.55.tgz#35ac1cd89b707ed13851cb3d112bb630d1f74a23"
+  integrity sha512-daC09l44TMWoouo8ZZe+1B+Z6BWOYdsP6nVmuVDcEQgq0Jyd3cvSwmjhpApxawYTeJT/e8bHAnZvM8AN3sHhAA==
   dependencies:
-    "@fluentui/keyboard-keys" "9.0.0-alpha.3"
+    "@fluentui/keyboard-keys" "9.0.0-alpha.5"
     tslib "^2.1.0"
 
 "@gar/promisify@^1.0.1":
