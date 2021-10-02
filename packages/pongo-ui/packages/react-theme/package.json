@@ -1,7 +1,16 @@
 {
   "name": "@pongoai/react-theme",
   "version": "0.0.0",
-  "private": true,
+  "description": "A set of theme tokens used by PongoAI.",
+  "main": "lib-commonjs/index.js",
+  "module": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PongoAI/pongoai-frontend"
+  },
+  "license": "MIT",
   "scripts": {
     "start": "yarn storybook",
     "build": "tsc",
