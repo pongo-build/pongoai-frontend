@@ -21,7 +21,7 @@
     "@emotion/styled": "11.3.0",
     "@fluentui/react-conformance": "^0.5.1",
     "@fluentui/react-utilities": "9.0.0-alpha.53",
-    "@mui/material": "5.0.1",
+    "@mui/material": "5.0.2",
     "@mui/styles": "5.0.1",
     "@nrwl/cli": "12.9.0",
     "@nrwl/nx-cloud": "latest",
