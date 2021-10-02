@@ -1,6 +1,6 @@
 {
   "name": "@pongoai/react-rating",
-  "version": "0.0.0",
+  "version": "9.0.0-alpha.0",
   "description": "A Rating control used to provide insight on a users review for a product.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",

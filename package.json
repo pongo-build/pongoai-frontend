@@ -10,6 +10,8 @@
   "scripts": {
     "start": "nx run pongo-landing:serve",
     "build": "nx run-many --target=build --all",
+    "change": "beachball change --scope \"!packages/pongo-ui/*\"",
+    "checkchange": "beachball check  --scope \"!packages/pongo-ui/*\" --changehint \"Run 'yarn change' to generate a change file\"",
     "test": "nx run-many --target=test --all",
     "lint": "nx run-many --target=lint --all",
     "format": "prettier --write ./",
@@ -36,6 +38,7 @@
     "@types/react-dom": "16.8.0",
     "autoprefixer": "^10.3.4",
     "babel-jest": "27.2.4",
+    "beachball": "^2.16.0",
     "clsx": "1.1.1",
     "enzyme": "~3.11.0",
     "enzyme-adapter-react-16": "^1.15.0",

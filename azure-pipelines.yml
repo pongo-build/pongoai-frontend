@@ -20,6 +20,10 @@ jobs:
         displayName: yarn
 
       - script: |
+          yarn checkchange
+        displayName: verify change files
+
+      - script: |
           yarn lint
         displayName: lint
 
