@@ -1217,10 +1217,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fluentui/keyboard-keys@9.0.0-alpha.3":
-  version "9.0.0-alpha.3"
-  resolved "https://registry.yarnpkg.com/@fluentui/keyboard-keys/-/keyboard-keys-9.0.0-alpha.3.tgz#d51a5d7c8f65f33476070ce7b0e55e0dd979a314"
-  integrity sha512-zW/5JWP30NS5+iYLpYCnM43vDsN48BXmwzA9UmisLLpQ1X/L3icRLM+yErPOaFrG6x5MyTBtgOekHSlWAOCuCg==
+"@fluentui/keyboard-keys@9.0.0-alpha.5":
+  version "9.0.0-alpha.5"
+  resolved "https://registry.yarnpkg.com/@fluentui/keyboard-keys/-/keyboard-keys-9.0.0-alpha.5.tgz#75b1180e64cd35e5fdeecd116384f772b7bb4ca6"
+  integrity sha512-BdbrE6gOZTZetxrv4eVeBRnePRsLALtbKBm4xflM6xIp3D6HIkP/fxwZicf00L+jv9zHv9o85eSRtVFQEXenAg==
 
 "@fluentui/react-conformance@^0.5.1":
   version "0.5.1"
@@ -1234,12 +1234,12 @@
     react-is "^16.6.3"
     tslib "^2.1.0"
 
-"@fluentui/react-utilities@9.0.0-alpha.53":
-  version "9.0.0-alpha.53"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-utilities/-/react-utilities-9.0.0-alpha.53.tgz#c40be36a869736dad0aad65a598039a5d31c11f0"
-  integrity sha512-GF9vrhrjKfXOlkMX8dS+/etm8UyeC+SwI/iTwRcpxO/9qljX6c3s186x3iHqk1hgmfrtuiYM8d704sSWVv9H+w==
+"@fluentui/react-utilities@9.0.0-alpha.55":
+  version "9.0.0-alpha.55"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-utilities/-/react-utilities-9.0.0-alpha.55.tgz#35ac1cd89b707ed13851cb3d112bb630d1f74a23"
+  integrity sha512-daC09l44TMWoouo8ZZe+1B+Z6BWOYdsP6nVmuVDcEQgq0Jyd3cvSwmjhpApxawYTeJT/e8bHAnZvM8AN3sHhAA==
   dependencies:
-    "@fluentui/keyboard-keys" "9.0.0-alpha.3"
+    "@fluentui/keyboard-keys" "9.0.0-alpha.5"
     tslib "^2.1.0"
 
 "@gar/promisify@^1.0.1":
@@ -2345,7 +2345,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*":
+"@types/react@*", "@types/react@17.0.26":
   version "17.0.26"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.26.tgz#960ea4b3518cc154ed7df3b35656c508df653331"
   integrity sha512-MXxuXrH2xOcv5cp/su4oz69dNQnSA90JjFw5HBd5wifw6Ihi94j7dRJm7qNsB30tnruXSCPc9qmlhGop4nh9Hw==
@@ -2353,14 +2353,6 @@
     "@types/prop-types" "*"
     "@types/scheduler" "*"
     csstype "^3.0.2"
-
-"@types/react@16.8.0":
-  version "16.8.0"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.0.tgz#0933e105ea21739948b1525920e0536312d54c58"
-  integrity sha512-phBajeyF9ZIYGWUHJV1+X5GHOtdUO0+qHamY4PXFPf6ntoDfW+VqOG8oyruD2K4rqApfOB1QKuQiNYUX8ejEpQ==
-  dependencies:
-    "@types/prop-types" "*"
-    csstype "^2.2.0"
 
 "@types/scheduler@*":
   version "0.16.2"
@@ -4200,7 +4192,7 @@ cssstyle@^1.0.0:
   dependencies:
     cssom "0.3.x"
 
-csstype@^2.2.0, csstype@^2.5.7:
+csstype@^2.5.7:
   version "2.6.18"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.18.tgz#980a8b53085f34af313410af064f2bd241784218"
   integrity sha512-RSU6Hyeg14am3Ah4VZEmeX8H7kLwEEirXe6aU2IPfKNvhXwTflK5HQRDNI0ypQXoqmm+QPyG2IaPuQE5zMwSIQ==
@@ -10408,10 +10400,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@4.1.5:
-  version "4.1.5"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.5.tgz#123a3b214aaff3be32926f0d8f1f6e704eb89a72"
-  integrity sha512-6OSu9PTIzmn9TCDiovULTnET6BgXtDYL4Gg4szY+cGsc3JP1dQL8qvE8kShTRx1NIw4Q9IBHlwODjkjWEtMUyA==
+typescript@4.4.3:
+  version "4.4.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.4.3.tgz#bdc5407caa2b109efd4f82fe130656f977a29324"
+  integrity sha512-4xfscpisVgqqDfPaJo5vkd+Qd/ItkoagnHpufr+i2QCHBsNYp+G7UAoyFl8aPtx879u38wPV65rZ8qbGZijalA==
 
 unbox-primitive@^1.0.1:
   version "1.0.1"
