@@ -1,0 +1,53 @@
+pr: none
+trigger: none
+
+name: 'pongoai_$(Date:yyyyMMdd)$(Rev:.r)'
+
+schedules:
+  - cron: '0 0 * * *'
+    displayName: 'Daily midnight build'
+    branches:
+      include:
+        - master
+
+variables:
+  - template: .devops/templates/variables.yml
+
+pool: Default
+
+workspace:
+  clean: all
+
+steps:
+  - template: .devops/templates/tools.yml
+
+  - script: |
+      git config user.name "pongoaibuild"
+      git config user.email "https://github.com/pongoaibuild/pongoai-frontend"
+      git remote set-url origin https://pongoaibuild:${{ secrets.GITHUB_TOKEN }}@github.com/PongoAI/pongoai-frontend.git
+    displayName: 👤 Set up profile for git pushes
+
+  - script: |
+      yarn
+    displayName: yarn
+
+  - script: |
+      yarn lint
+    displayName: lint
+
+  - script: |
+      yarn build
+    displayName: build
+
+  - script: |
+      yarn test
+    displayName: test
+
+  - script: |
+      yarn publish:beachball -n ${{secrets.NPM_TOKEN}}
+      git reset --hard origin/master
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    displayName: ✨ Publishing
