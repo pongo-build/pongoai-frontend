@@ -1,5 +1,4 @@
-name: Releasing v0_$(Date:yyyyMMdd)$(Rev:.r)
-
+name: Publish 🚀
 on:
   push:
     branches:
@@ -7,13 +6,19 @@ on:
 
 jobs:
   release:
-    name: 'Publish 🚀'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.1.0
-      - name: Publishing ✨
-        uses: ./
+      - name: Checkout
+        uses: actions/checkout@v2
+      - run: git fetch --unshallow --tags
+      - name: Setup node
+        uses: actions/setup-node@v1
         with:
-            run: yarn publish:beachball -n ${{secrets.NPM_TOKEN}}
-    env:
-      NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          node-version: '12.x'
+          registry-url: 'https://registry.npmjs.org'
+      - name: Publishing ✨
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: yarn publish:beachball -n ${{secrets.NPM_TOKEN}}
