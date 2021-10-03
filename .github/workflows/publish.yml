@@ -1,4 +1,4 @@
-name: Publish 🚀
+name: 🚀 Publish NPM Changes
 on:
   push:
     branches:
@@ -8,19 +8,24 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: 📗 Checkout
         uses: actions/checkout@v2
       - run: git fetch --unshallow --tags
-      - name: Setup node
+
+      - name: 📥 Install node
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
           registry-url: 'https://registry.npmjs.org'
-      - name: Publishing ✨
+
+      - name: ✨ Publishing
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           yarn
+          git config user.name "pongoaibuild"
+          git config user.email "https://github.com/pongoaibuild/pongoai-frontend"
+          git remote set-url origin https://$(githubUser):$(githubPAT)@github.com/PongoAI/pongoai-frontend.git
           yarn publish:beachball -n ${{secrets.NPM_TOKEN}}
