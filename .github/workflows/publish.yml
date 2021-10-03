@@ -1,0 +1,14 @@
+name: Releasing v0_$(Date:yyyyMMdd)$(Rev:.r)
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  release:
+    name: 'Publish 🚀'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publishing ✨
+        run: yarn publish:beachball -n $(secrets.NPM_TOKEN)
