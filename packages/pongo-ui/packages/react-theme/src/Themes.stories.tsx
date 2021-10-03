@@ -5,7 +5,7 @@ import { webLightTheme } from './index';
 export const WebLightModeExample = () => {
   return (
     <ThemeProvider theme={webLightTheme}>
-      <h1>This is a test</h1>
+      <h1>Theme test</h1>
     </ThemeProvider>
   );
 };
