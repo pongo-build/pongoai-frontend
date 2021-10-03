@@ -12,6 +12,7 @@
     "build": "nx run-many --target=build --all",
     "change": "beachball change --scope \"!packages/pongo-ui/*\"",
     "checkchange": "beachball check  --scope \"!packages/pongo-ui/*\" --changehint \"Run 'yarn change' to generate a change file\"",
+    "publish:beachball": "beachball publish -b origin/master --access public -y",
     "test": "nx run-many --target=test --all",
     "lint": "nx run-many --target=lint --all",
     "format": "prettier --write ./",
