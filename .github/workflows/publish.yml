@@ -11,4 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Publishing ✨
-        run: yarn publish:beachball -n $(secrets.NPM_TOKEN)
+        run: yarn publish:beachball -n ${{secrets.NPM_TOKEN}}
+    env:
+      NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
