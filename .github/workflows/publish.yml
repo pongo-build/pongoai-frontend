@@ -27,5 +27,5 @@ jobs:
           yarn
           git config user.name "pongoaibuild"
           git config user.email "https://github.com/pongoaibuild/pongoai-frontend"
-          git remote set-url origin https://$(githubUser):$(githubPAT)@github.com/PongoAI/pongoai-frontend.git
+          git remote set-url origin https://pongoaibuild:${{ secrets.GITHUB_TOKEN }}@github.com/PongoAI/pongoai-frontend.git
           yarn publish:beachball -n ${{secrets.NPM_TOKEN}}
