@@ -3,5 +3,4 @@ module.exports = {
   tag: 'latest',
   generateChangelog: true,
   groupChanges: true,
-  scope: './packages/pongo-ui',
 };
