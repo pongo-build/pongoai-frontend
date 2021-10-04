@@ -1,11 +1,10 @@
 {
-  "name": "@pongoai/react-rating",
+  "name": "@pongoai/header",
   "version": "0.0.0-alpha.0",
-  "description": "A Rating control used to provide insight on a users review for a product.",
+  "description": "Pongo shared controls is a collection of shared controls used within its web pages.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
   "typings": "lib/index.d.ts",
-  "private": true,
   "sideEffects": false,
   "repository": {
     "type": "git",
@@ -15,14 +14,14 @@
   "scripts": {
     "start": "yarn storybook",
     "build": "tsc",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "lint": "eslint",
     "storybook": "start-storybook",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@fluentui/react-utilities": "^9.0.0-alpha.55",
-    "@mui/styles": "^5.0.1",
+    "@fluentui/react-utilities": "9.0.0-alpha.55",
+    "@mui/styles": "5.0.1",
     "clsx": "1.1.1"
   },
   "devDependencies": {

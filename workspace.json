@@ -13,6 +13,14 @@
       "root": "packages/pongo-ui",
       "projectType": "library"
     },
+    "pongo-shared-controls": {
+      "root": "packages/pongo-shared-controls",
+      "projectType": "library"
+    },
+    "header": {
+      "root": "packages/pongo-shared-controls/packages/header",
+      "projectType": "library"
+    },
     "react-button": {
       "root": "packages/pongo-ui/packages/react-button",
       "projectType": "library"

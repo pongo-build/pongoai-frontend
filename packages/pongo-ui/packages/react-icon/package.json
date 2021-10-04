@@ -1,6 +1,6 @@
 {
   "name": "@pongoai/react-icon",
-  "version": "9.0.0-alpha.0",
+  "version": "0.0.0-alpha.0",
   "private": true,
   "scripts": {
     "start": "yarn storybook",
@@ -11,9 +11,9 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@emotion/react": "11.4.1",
-    "@emotion/styled": "11.3.0",
-    "@mui/material": "5.0.2"
+    "@fluentui/react-utilities": "^9.0.0-alpha.55",
+    "@mui/styles": "^5.0.1",
+    "clsx": "1.1.1"
   },
   "devDependencies": {
     "@fluentui/react-conformance": "^0.5.1",

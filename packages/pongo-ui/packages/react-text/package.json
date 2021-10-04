@@ -1,6 +1,6 @@
 {
   "name": "@pongoai/react-text",
-  "version": "9.0.0-alpha.0",
+  "version": "0.0.0-alpha.0",
   "description": "A Text control that standardizes font styling across a webpage.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
