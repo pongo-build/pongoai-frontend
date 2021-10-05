@@ -8,4 +8,4 @@ const useStyles = makeStyles((theme: Theme) => ({
   }),
 }));
 
-export const Header3 = createText({ as: 'h4', font: 'base', size: 500, weight: 'medium' }, useStyles, 'Header3');
+export const Header3 = createText({ as: 'h4', font: 'base', size: 500, weight: 'light' }, useStyles, 'Header3');

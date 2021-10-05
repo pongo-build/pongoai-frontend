@@ -1,0 +1,25 @@
+{
+  "changes": [
+    {
+      "type": "patch",
+      "comment": "Updating styling.",
+      "packageName": "@pongoai/header",
+      "email": "czearing@outlook.com",
+      "dependentChangeType": "patch"
+    },
+    {
+      "type": "patch",
+      "comment": "Updating styles",
+      "packageName": "@pongoai/react-button",
+      "email": "czearing@outlook.com",
+      "dependentChangeType": "patch"
+    },
+    {
+      "type": "patch",
+      "comment": "Updating Header3 styles",
+      "packageName": "@pongoai/react-text",
+      "email": "czearing@outlook.com",
+      "dependentChangeType": "patch"
+    }
+  ]
+}

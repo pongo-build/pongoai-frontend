@@ -93,10 +93,10 @@ const useRootStyles = makeStyles({
     background: 'none',
     color: theme.palette.neutral1,
 
-    '&:hover': {
+    ':hover': {
       background: theme.palette.neutral2Hover,
     },
-    '&:active': {
+    ':active': {
       background: theme.palette.neutral2Active,
     },
   }),
