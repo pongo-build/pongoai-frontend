@@ -1,8 +1,7 @@
-import { makeStyles } from '@mui/styles';
-import clsx from 'clsx';
+import { makeStyles, mergeClasses } from '@fluentui/react-make-styles';
 import type { RatingState } from './Rating.types';
 
-const useRootStyles = makeStyles(() => ({
+const useRootStyles = makeStyles({
   root: {
     position: 'relative',
     display: 'inline-flex',
@@ -24,9 +23,9 @@ const useRootStyles = makeStyles(() => ({
   disabled: {
     cursor: 'not-allowed',
   },
-}));
+});
 
-const useStarStyles = makeStyles(() => ({
+const useStarStyles = makeStyles({
   star: {
     position: 'absolute',
     width: 'var(--rating-star-size)',
@@ -36,23 +35,6 @@ const useStarStyles = makeStyles(() => ({
     pointerEvents: 'none',
     boxSizing: 'border-box',
     background: 'green',
-    // ':before': {
-    //   position: 'absolute',
-    //   top: '0px',
-    //   left: '0px',
-    //   bottom: '0px',
-    //   right: '0px',
-    //   content: "''",
-    // },
-    // ':after': {
-    //   position: 'absolute',
-    //   top: '0px',
-    //   left: '0px',
-    //   bottom: '0px',
-    //   right: '0px',
-    //   content: "''",
-    //   opacity: 'var(--switch-checked-opacity)',
-    // },
   },
 
   enabled: {
@@ -72,7 +54,7 @@ const useStarStyles = makeStyles(() => ({
       backgroundColor: 'red',
     },
   },
-}));
+});
 
 /**
  * Styles for the hidden input slot
@@ -93,19 +75,19 @@ export const useRatingStyles = (state: RatingState) => {
   const starStyles = useStarStyles();
   const inputStyles = useInputStyle();
 
-  state.root.className = clsx(
+  state.root.className = mergeClasses(
     rootStyles.root,
     state.disabled ? rootStyles.disabled : rootStyles.enabled,
     state.root.className,
   );
 
-  state.star.className = clsx(
+  state.star.className = mergeClasses(
     starStyles.star,
     state.disabled ? starStyles.disabled : starStyles.enabled,
     state.star.className,
   );
 
-  state.input.className = clsx(inputStyles.input, state.input.className);
+  state.input.className = mergeClasses(inputStyles.input, state.input.className);
 
   return state;
 };

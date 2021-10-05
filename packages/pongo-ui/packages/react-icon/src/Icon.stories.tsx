@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { ChatBubbleIcon } from './index';
-import { ThemeProvider } from '@mui/styles';
+import { FluentProvider } from '@fluentui/react-provider';
 import { webLightTheme } from '../../react-theme/src';
 
 export const BasicIconExample = () => {
   return (
-    <ThemeProvider theme={webLightTheme}>
+    <FluentProvider theme={webLightTheme}>
       <ChatBubbleIcon />
-    </ThemeProvider>
+    </FluentProvider>
   );
 };
 

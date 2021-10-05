@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Rating } from './index';
-import { ThemeProvider } from '@mui/material/styles';
+import { FluentProvider } from '@fluentui/react-provider';
 import { webLightTheme } from '../../react-theme/src';
 
 export const BasicRatingExample = () => {
@@ -11,10 +11,10 @@ export const BasicRatingExample = () => {
   };
 
   return (
-    <ThemeProvider theme={webLightTheme}>
+    <FluentProvider theme={webLightTheme}>
       <Rating value={ratingValue} onChange={onRatingChange} />
       <h1>{ratingValue}</h1>
-    </ThemeProvider>
+    </FluentProvider>
   );
 };
 

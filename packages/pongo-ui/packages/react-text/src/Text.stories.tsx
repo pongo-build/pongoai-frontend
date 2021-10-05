@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Text, Body, Caption, Display, Header1, Header2, Header3, SubHeadline, Title } from './index';
-import { ThemeProvider, makeStyles } from '@mui/styles';
+import { FluentProvider } from '@fluentui/react-provider';
+import { makeStyles } from '@fluentui/react-make-styles';
 import { webLightTheme } from '../../react-theme/src/index';
 
 const useStyles = makeStyles({
@@ -20,7 +21,7 @@ export const BasicTextExample = () => {
   const styles = useStyles();
 
   return (
-    <ThemeProvider theme={webLightTheme}>
+    <FluentProvider theme={webLightTheme}>
       <div className={styles.root}>
         <Text size={600}>Header</Text>
         <div className={styles.row}>
@@ -47,7 +48,7 @@ export const BasicTextExample = () => {
         <Body>Body: The quick brown fox jumps over the lazy dog</Body>
         <Caption>Caption: The quick brown fox jumps over the lazy dog</Caption>
       </div>
-    </ThemeProvider>
+    </FluentProvider>
   );
 };
 

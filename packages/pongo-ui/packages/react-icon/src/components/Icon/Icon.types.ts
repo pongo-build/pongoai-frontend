@@ -4,7 +4,7 @@ export type IconSlots = {
   /**
    * The root of the Icon.
    */
-  root: IntrinsicShorthandProps<'svg'>;
+  root: IntrinsicShorthandProps<'span'>;
 };
 
 export type IconCommons = {};

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Button } from './index';
-import { ThemeProvider, makeStyles } from '@mui/styles';
+import { FluentProvider } from '@fluentui/react-provider';
+import { makeStyles } from '@fluentui/react-make-styles';
 import { webLightTheme } from '../../react-theme/src/index';
 
 const useStyles = makeStyles({
@@ -20,7 +21,7 @@ export const BasicButtonExample = () => {
   const styles = useStyles();
 
   return (
-    <ThemeProvider theme={webLightTheme}>
+    <FluentProvider theme={webLightTheme}>
       <div className={styles.root}>
         <div className={styles.row}>
           <Button>Outline</Button>
@@ -54,7 +55,7 @@ export const BasicButtonExample = () => {
           <Button shape="square">Square</Button>
         </div>
       </div>
-    </ThemeProvider>
+    </FluentProvider>
   );
 };
 

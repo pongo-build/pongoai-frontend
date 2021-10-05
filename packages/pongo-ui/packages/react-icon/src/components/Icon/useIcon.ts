@@ -7,9 +7,9 @@ export const iconShorthandProps: (keyof IconSlots)[] = ['root'];
 export const useIcon = (props: IconProps, ref: React.Ref<HTMLElement>): IconState => {
   const state: IconState = {
     components: {
-      root: 'svg',
+      root: 'span',
     },
-    root: getNativeElementProps('svg', {
+    root: getNativeElementProps('span', {
       ref,
       role: 'img',
       ...props,

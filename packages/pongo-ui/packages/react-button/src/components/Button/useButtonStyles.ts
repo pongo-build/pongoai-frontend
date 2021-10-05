@@ -1,10 +1,9 @@
-import { makeStyles } from '@mui/styles';
-import clsx from 'clsx';
+import { makeStyles, mergeClasses } from '@fluentui/react-make-styles';
 import type { ButtonState } from './Button.types';
 import { Theme } from '../../../../react-theme/src/index';
 
-const useRootStyles = makeStyles((theme: Theme) => ({
-  root: {
+const useRootStyles = makeStyles({
+  root: (theme: Theme) => ({
     position: 'relative',
     display: 'inline-flex',
     alignItems: 'center',
@@ -32,7 +31,7 @@ const useRootStyles = makeStyles((theme: Theme) => ({
         borderRadius: '2px',
       },
     },
-  },
+  }),
 
   enabled: {
     cursor: 'pointer',
@@ -49,7 +48,7 @@ const useRootStyles = makeStyles((theme: Theme) => ({
     cursor: 'not-allowed',
   },
 
-  outline: {
+  outline: (theme: Theme) => ({
     border: `2px solid ${theme.palette.neutral1Stroke}`,
     background: 'none',
 
@@ -60,15 +59,15 @@ const useRootStyles = makeStyles((theme: Theme) => ({
       background: theme.palette.neutral2Active,
       borderColor: theme.palette.neutral1StrokeActive,
     },
-  },
+  }),
 
-  outlineDisabled: {
+  outlineDisabled: (theme: Theme) => ({
     border: `2px solid ${theme.palette.neutral2Disabled}`,
     background: theme.palette.neutral2DisabledBackground,
     color: theme.palette.neutral2Disabled,
-  },
+  }),
 
-  primary: {
+  primary: (theme: Theme) => ({
     border: `2px solid ${theme.palette.brand1Stroke}`,
     background: theme.palette.brand1,
     color: theme.palette.neutral2,
@@ -81,15 +80,15 @@ const useRootStyles = makeStyles((theme: Theme) => ({
       background: theme.palette.brand1Active,
       borderColor: theme.palette.brand1StrokeActive,
     },
-  },
+  }),
 
-  primaryDisabled: {
+  primaryDisabled: (theme: Theme) => ({
     border: `2px solid ${theme.palette.neutral2Disabled}`,
     background: theme.palette.neutral2DisabledBackground,
     color: theme.palette.neutral2Disabled,
-  },
+  }),
 
-  subtle: {
+  subtle: (theme: Theme) => ({
     border: 'none',
     background: 'none',
     color: theme.palette.neutral1,
@@ -100,15 +99,15 @@ const useRootStyles = makeStyles((theme: Theme) => ({
     '&:active': {
       background: theme.palette.neutral2Active,
     },
-  },
+  }),
 
-  subtleDisabled: {
+  subtleDisabled: (theme: Theme) => ({
     border: 'none',
     background: 'none',
     color: theme.palette.neutral2Disabled,
-  },
+  }),
 
-  transparent: {
+  transparent: (theme: Theme) => ({
     border: 'none',
     background: 'none',
     color: theme.palette.neutral1,
@@ -120,13 +119,13 @@ const useRootStyles = makeStyles((theme: Theme) => ({
       color: theme.palette.neutral1Active,
       textDecoration: 'underline',
     },
-  },
+  }),
 
-  transparentDisabled: {
+  transparentDisabled: (theme: Theme) => ({
     border: 'none',
     background: 'none',
     color: theme.palette.neutral2Disabled,
-  },
+  }),
 
   rounded: {
     borderRadius: '6px',
@@ -141,12 +140,12 @@ const useRootStyles = makeStyles((theme: Theme) => ({
   square: {
     borderRadius: '0px',
   },
-}));
+});
 
 export const useButtonStyles = (state: ButtonState) => {
   const rootStyles = useRootStyles();
 
-  state.root.className = clsx(
+  state.root.className = mergeClasses(
     rootStyles.root,
     state.disabled ? rootStyles.disabled : rootStyles.enabled,
     state.disabled

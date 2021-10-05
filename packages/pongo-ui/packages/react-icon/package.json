@@ -1,7 +1,25 @@
 {
   "name": "@pongoai/react-icon",
   "version": "0.0.0-alpha.0",
+  "description": "A Icon control provides a user visual insight on the intent of content.",
+  "main": "lib-commonjs/index.js",
+  "module": "lib/index.js",
+  "typings": "lib/index.d.ts",
   "private": true,
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PongoAI/pongoai-frontend"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn storybook",
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint",
+    "storybook": "start-storybook",
+    "build-storybook": "build-storybook"
+  },
   "scripts": {
     "start": "yarn storybook",
     "build": "tsc",
@@ -12,10 +30,10 @@
   },
   "dependencies": {
     "@fluentui/react-utilities": "^9.0.0-alpha.55",
-    "@mui/styles": "^5.0.1",
-    "clsx": "1.1.1"
+    "@fluentui/react-make-styles": "^9.0.0-alpha.74"
   },
   "devDependencies": {
+    "@fluentui/react-provider": "9.0.0-alpha.85",
     "@fluentui/react-conformance": "^0.5.1",
     "@storybook/react": "^6.3.9",
     "@types/jest": "^27.0.2",

@@ -21,10 +21,10 @@
   },
   "dependencies": {
     "@fluentui/react-utilities": "9.0.0-alpha.55",
-    "@mui/styles": "5.0.1",
-    "clsx": "1.1.1"
+    "@fluentui/react-make-styles": "^9.0.0-alpha.74"
   },
   "devDependencies": {
+    "@fluentui/react-provider": "9.0.0-alpha.85",
     "@fluentui/react-conformance": "^0.5.1",
     "@storybook/react": "^6.3.9",
     "@types/jest": "^27.0.2",
