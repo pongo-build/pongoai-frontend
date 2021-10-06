@@ -1348,10 +1348,18 @@
     "@fluentui/keyboard-keys" "9.0.0-alpha.3"
     tslib "^2.1.0"
 
-"@fluentui/react-utilities@9.0.0-alpha.55", "@fluentui/react-utilities@^9.0.0-alpha.55":
+"@fluentui/react-utilities@9.0.0-alpha.55":
   version "9.0.0-alpha.55"
   resolved "https://registry.yarnpkg.com/@fluentui/react-utilities/-/react-utilities-9.0.0-alpha.55.tgz#35ac1cd89b707ed13851cb3d112bb630d1f74a23"
   integrity sha512-daC09l44TMWoouo8ZZe+1B+Z6BWOYdsP6nVmuVDcEQgq0Jyd3cvSwmjhpApxawYTeJT/e8bHAnZvM8AN3sHhAA==
+  dependencies:
+    "@fluentui/keyboard-keys" "9.0.0-alpha.5"
+    tslib "^2.1.0"
+
+"@fluentui/react-utilities@^9.0.0-alpha.56":
+  version "9.0.0-alpha.56"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-utilities/-/react-utilities-9.0.0-alpha.56.tgz#d6b195e0c08732e3d90124aa49728e980802a3af"
+  integrity sha512-fjXfR9vG8SFHQbyLNwpIUXc9H6m/nKgxLEYcZq1v/WzG19+tD3dK+rp5egxeEigH0G43+fNG8fsB1Bw/yfTqbA==
   dependencies:
     "@fluentui/keyboard-keys" "9.0.0-alpha.5"
     tslib "^2.1.0"

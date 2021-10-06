@@ -21,7 +21,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@fluentui/react-utilities": "^9.0.0-alpha.55",
+    "@fluentui/react-utilities": "^9.0.0-alpha.56",
     "@fluentui/react-make-styles": "^9.0.0-alpha.74"
   },
   "devDependencies": {
