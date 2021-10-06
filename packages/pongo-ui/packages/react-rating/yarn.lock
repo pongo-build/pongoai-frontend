@@ -1239,10 +1239,10 @@
     stylis "^4.0.6"
     tslib "^2.1.0"
 
-"@fluentui/make-styles@9.0.0-alpha.34":
-  version "9.0.0-alpha.34"
-  resolved "https://registry.yarnpkg.com/@fluentui/make-styles/-/make-styles-9.0.0-alpha.34.tgz#2574ee566874a00bd680b8c132b6243255ac7b48"
-  integrity sha512-iFu7adHAkAHrIuYQ64N64rDlhSJ5ZJ5cu+J8WKWZxm05WMW2zVTg3/wKR5+qlHAlRorOWAJ+eZqRtQycJp6YIQ==
+"@fluentui/make-styles@9.0.0-alpha.35":
+  version "9.0.0-alpha.35"
+  resolved "https://registry.yarnpkg.com/@fluentui/make-styles/-/make-styles-9.0.0-alpha.35.tgz#80dcde4d7477d4d270fab06225e73821b8273f1f"
+  integrity sha512-RaiYcr1EgXrhtkGKfkdCU9yS+aYmNdHX5t1MjGrZ6TGNZ2AfUFn1EM1KLD/NUOzprgeTnRMn8V2DLoyLZvtjxA==
   dependencies:
     "@emotion/hash" "^0.8.0"
     csstype "^2.6.7"
@@ -1274,15 +1274,15 @@
     "@fluentui/react-utilities" "9.0.0-alpha.53"
     tslib "^2.1.0"
 
-"@fluentui/react-make-styles@^9.0.0-alpha.74":
-  version "9.0.0-alpha.76"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-make-styles/-/react-make-styles-9.0.0-alpha.76.tgz#4a70b0db9189ae74fdf4018cfc67193e0b5cfec5"
-  integrity sha512-iwLMmja35YCO3ClvuDE3DPoWvgGccW0+iIIzNei6C20IjnpFIyNGandMXu9OtXUZopl1g7onunlYLbzVgiDYEw==
+"@fluentui/react-make-styles@^9.0.0-alpha.78":
+  version "9.0.0-alpha.78"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-make-styles/-/react-make-styles-9.0.0-alpha.78.tgz#21eb42632ac59164f9482ea304c42b6959752a9c"
+  integrity sha512-CEFZ1ubH6Uhfv1BenZ4j09Rdf8aPLwbS8EnekZUpmUrtOCvmXlh03zyK3FJ22hiMRomaHFNi+blBHdVlULibgQ==
   dependencies:
-    "@fluentui/make-styles" "9.0.0-alpha.34"
+    "@fluentui/make-styles" "9.0.0-alpha.35"
     "@fluentui/react-shared-contexts" "9.0.0-alpha.28"
     "@fluentui/react-theme" "9.0.0-alpha.26"
-    "@fluentui/react-utilities" "9.0.0-alpha.55"
+    "@fluentui/react-utilities" "9.0.0-alpha.56"
     tslib "^2.1.0"
 
 "@fluentui/react-provider@9.0.0-alpha.85":
@@ -1348,10 +1348,10 @@
     "@fluentui/keyboard-keys" "9.0.0-alpha.3"
     tslib "^2.1.0"
 
-"@fluentui/react-utilities@9.0.0-alpha.55":
-  version "9.0.0-alpha.55"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-utilities/-/react-utilities-9.0.0-alpha.55.tgz#35ac1cd89b707ed13851cb3d112bb630d1f74a23"
-  integrity sha512-daC09l44TMWoouo8ZZe+1B+Z6BWOYdsP6nVmuVDcEQgq0Jyd3cvSwmjhpApxawYTeJT/e8bHAnZvM8AN3sHhAA==
+"@fluentui/react-utilities@9.0.0-alpha.56", "@fluentui/react-utilities@^9.0.0-alpha.55":
+  version "9.0.0-alpha.56"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-utilities/-/react-utilities-9.0.0-alpha.56.tgz#d6b195e0c08732e3d90124aa49728e980802a3af"
+  integrity sha512-fjXfR9vG8SFHQbyLNwpIUXc9H6m/nKgxLEYcZq1v/WzG19+tD3dK+rp5egxeEigH0G43+fNG8fsB1Bw/yfTqbA==
   dependencies:
     "@fluentui/keyboard-keys" "9.0.0-alpha.5"
     tslib "^2.1.0"
