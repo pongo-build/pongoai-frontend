@@ -1,2 +1,8 @@
-fixes:
-  - '/home/runner/work/pongoai-frontend/pongoai-frontend/::'
+coverage:
+  status:
+    project:
+      default:
+        target: auto
+        threshold: 1%
+    patch: off
+comment: false
