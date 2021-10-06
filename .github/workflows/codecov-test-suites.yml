@@ -9,4 +9,4 @@ jobs:
       - uses: actions/checkout@v2
       - run: yarn
       - run: yarn test --coverage
-      - run: codecov --token=${{ secrets.CODECOV_TOKEN }}
+      - run: yarn codecov --token=${{ secrets.CODECOV_TOKEN }}
