@@ -15,8 +15,8 @@
     "publish:beachball": "beachball publish -b origin/master --access public -y",
     "test": "nx run-many --target=test --all",
     "lint": "nx run-many --target=lint --all",
-    "format": "prettier --write ./",
-    "check-format": "prettier --check ./",
+    "format": "prettier --ignore-path .gitignore --write ./",
+    "check-format": "prettier --ignore-path .gitignore --check ./",
     "prepare": "husky install"
   },
   "devDependencies": {
@@ -26,6 +26,7 @@
     "@fluentui/react-make-styles": "^9.0.0-alpha.74",
     "@fluentui/react-provider": "9.0.0-alpha.85",
     "@fluentui/react-utilities": "9.0.0-alpha.53",
+    "@pongoai/react-theme": "^0.0.1",
     "@mui/styles": "5.0.1",
     "@nrwl/cli": "12.9.0",
     "@nrwl/jest": "12.9.0",

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Rating } from './index';
 import { FluentProvider } from '@fluentui/react-provider';
-import { webLightTheme } from '../../react-theme/src';
+import { webLightTheme } from '@pongoai/react-theme';
 
 export const BasicRatingExample = () => {
   const [ratingValue, setRatingValue] = React.useState(0);

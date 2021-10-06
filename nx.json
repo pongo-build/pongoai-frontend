@@ -23,10 +23,11 @@
     "pongo-landing": { "implicitDependencies": [] },
     "pongo-dashboard": { "implicitDependencies": [] },
     "pongo-ui": { "implicitDependencies": [] },
-    "react-button": { "implicitDependencies": [] },
-    "react-rating": { "implicitDependencies": [] },
-    "react-theme": { "implicitDependencies": [] },
-    "react-icon": { "implicitDependencies": [] },
-    "react-text": { "implicitDependencies": [] }
+    "@pongoai/header": { "implicitDependencies": [] },
+    "@pongoai/react-button": { "implicitDependencies": [] },
+    "@pongoai/react-rating": { "implicitDependencies": [] },
+    "@pongoai/react-theme": { "implicitDependencies": [] },
+    "@pongoai/react-icon": { "implicitDependencies": [] },
+    "@pongoai/react-text": { "implicitDependencies": [] }
   }
 }

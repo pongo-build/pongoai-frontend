@@ -1,20 +1,5 @@
-// @ts-check
-
-/**
- * @type {jest.InitialOptions}
- */
 module.exports = {
   displayName: 'react-rating',
-  preset: '../../../../jest.preset.js',
-  globals: {
-    'ts-jest': {
-      tsConfig: '<rootDir>/tsconfig.json',
-      diagnostics: false,
-    },
-  },
-  transform: {
-    '^.+\\.tsx?$': 'ts-jest',
-  },
-  coverageDirectory: './coverage',
-  setupFilesAfterEnv: ['./config/tests.js'],
+  preset: 'ts-jest',
+  testPathIgnorePatterns: ['/node_modules/', '/lib/', '/lib-commonjs/', '/dist/'],
 };

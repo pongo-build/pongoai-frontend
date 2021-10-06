@@ -17,27 +17,27 @@
       "root": "packages/pongo-shared-controls",
       "projectType": "library"
     },
-    "header": {
+    "@pongoai/header": {
       "root": "packages/pongo-shared-controls/packages/header",
       "projectType": "library"
     },
-    "react-button": {
+    "@pongoai/react-button": {
       "root": "packages/pongo-ui/packages/react-button",
       "projectType": "library"
     },
-    "react-rating": {
+    "@pongoai/react-rating": {
       "root": "packages/pongo-ui/packages/react-rating",
       "projectType": "library"
     },
-    "react-theme": {
+    "@pongoai/react-theme": {
       "root": "packages/pongo-ui/packages/react-theme",
       "projectType": "library"
     },
-    "react-icon": {
+    "@pongoai/react-icon": {
       "root": "packages/pongo-ui/packages/react-icon",
       "projectType": "library"
     },
-    "react-text": {
+    "@pongoai/react-text": {
       "root": "packages/pongo-ui/packages/react-text",
       "projectType": "library"
     }
