@@ -2,6 +2,21 @@
   "name": "@pongoai/react-text",
   "entries": [
     {
+      "date": "Wed, 06 Oct 2021 04:49:08 GMT",
+      "tag": "@pongoai/react-text_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@pongoai/react-text",
+            "comment": "Bump @pongoai/react-theme to v0.0.2",
+            "commit": "1f0d0b796f7fbdb09ed6f89f4c4545220d36810a"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 05 Oct 2021 20:50:15 GMT",
       "tag": "@pongoai/react-text_v0.0.0",
       "version": "0.0.0",

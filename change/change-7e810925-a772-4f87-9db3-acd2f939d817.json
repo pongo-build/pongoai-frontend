@@ -2,35 +2,28 @@
   "changes": [
     {
       "type": "none",
-      "comment": "Updating tsconfig.",
-      "packageName": "@pongoai/header",
-      "email": "czearing@outlook.com",
-      "dependentChangeType": "none"
-    },
-    {
-      "type": "none",
-      "comment": "Updating tsconfig.",
+      "comment": "Updating changelog",
       "packageName": "@pongoai/react-button",
       "email": "czearing@outlook.com",
       "dependentChangeType": "none"
     },
     {
       "type": "none",
-      "comment": "Updating tsconfig.",
+      "comment": "Updating changelog",
       "packageName": "@pongoai/react-icon",
       "email": "czearing@outlook.com",
       "dependentChangeType": "none"
     },
     {
       "type": "none",
-      "comment": "Updating tsconfig.",
+      "comment": "Updating changelog",
       "packageName": "@pongoai/react-text",
       "email": "czearing@outlook.com",
       "dependentChangeType": "none"
     },
     {
       "type": "none",
-      "comment": "Updating tsconfig.",
+      "comment": "Updating changelog",
       "packageName": "@pongoai/react-theme",
       "email": "czearing@outlook.com",
       "dependentChangeType": "none"

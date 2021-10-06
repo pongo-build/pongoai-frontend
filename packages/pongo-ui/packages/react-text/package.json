@@ -1,6 +1,6 @@
 {
   "name": "@pongoai/react-text",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A Text control that standardizes font styling across a webpage.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -22,7 +22,7 @@
   "dependencies": {
     "@fluentui/react-make-styles": "^9.0.0-alpha.74",
     "@fluentui/react-utilities": "9.0.0-alpha.55",
-    "@pongoai/react-theme": "^0.0.1"
+    "@pongoai/react-theme": "^0.0.2"
   },
   "devDependencies": {
     "@fluentui/react-conformance": "^0.5.1",

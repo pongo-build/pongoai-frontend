@@ -1,6 +1,6 @@
 {
   "name": "@pongoai/react-button",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A Button control that allows users to make an action through a press.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -26,7 +26,7 @@
   "devDependencies": {
     "@fluentui/react-provider": "9.0.0-alpha.85",
     "@fluentui/react-conformance": "^0.5.1",
-    "@pongoai/react-theme": "^0.0.1",
+    "@pongoai/react-theme": "^0.0.2",
     "@storybook/react": "^6.3.9",
     "@types/jest": "^27.0.2",
     "@types/react": "17.0.26",

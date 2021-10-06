@@ -1,6 +1,6 @@
 {
   "name": "@pongoai/react-theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A set of theme tokens used by PongoAI.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",

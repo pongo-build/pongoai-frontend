@@ -2,6 +2,35 @@
   "name": "@pongoai/react-theme",
   "entries": [
     {
+      "date": "Wed, 06 Oct 2021 04:49:08 GMT",
+      "tag": "@pongoai/react-theme_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "none": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongoai/react-theme",
+            "comment": "Updating tsconfig.",
+            "commit": "1f0d0b796f7fbdb09ed6f89f4c4545220d36810a"
+          },
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongoai/react-theme",
+            "comment": "Abstracting ts-config",
+            "commit": "1f0d0b796f7fbdb09ed6f89f4c4545220d36810a"
+          }
+        ],
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongoai/react-theme",
+            "comment": "Updating imports",
+            "commit": "1f0d0b796f7fbdb09ed6f89f4c4545220d36810a"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 05 Oct 2021 20:50:15 GMT",
       "tag": "@pongoai/react-theme_v0.0.0",
       "version": "0.0.0",
