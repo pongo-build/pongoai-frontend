@@ -1,5 +1,5 @@
 {
-  "name": "pongoai-frontend",
+  "name": "@pongoai/frontend",
   "version": "0.0.0",
   "private": true,
   "repository": {
@@ -23,9 +23,9 @@
     "@emotion/react": "11.4.1",
     "@emotion/styled": "11.3.0",
     "@fluentui/react-conformance": "^0.5.1",
-    "@fluentui/react-utilities": "9.0.0-alpha.53",
     "@fluentui/react-make-styles": "^9.0.0-alpha.74",
     "@fluentui/react-provider": "9.0.0-alpha.85",
+    "@fluentui/react-utilities": "9.0.0-alpha.53",
     "@mui/styles": "5.0.1",
     "@nrwl/cli": "12.9.0",
     "@nrwl/jest": "12.9.0",
@@ -75,5 +75,8 @@
   "lint-staged": {
     "*.js": "eslint --cache --fix",
     "*./": "prettier --write"
+  },
+  "dependencies": {
+    "@pongoai/react-button": "^0.0.0-alpha.0"
   }
 }

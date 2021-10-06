@@ -1,8 +1,3 @@
-// @ts-check
-
-/**
- * @type {jest.InitialOptions}
- */
 module.exports = {
   displayName: 'react-text',
   preset: '../../../../jest.preset.js',

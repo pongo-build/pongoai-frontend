@@ -1,0 +1,39 @@
+{
+  "changes": [
+    {
+      "type": "patch",
+      "comment": "Updating imports",
+      "packageName": "@pongoai/header",
+      "email": "czearing@outlook.com",
+      "dependentChangeType": "patch"
+    },
+    {
+      "type": "patch",
+      "comment": "Updating imports",
+      "packageName": "@pongoai/react-button",
+      "email": "czearing@outlook.com",
+      "dependentChangeType": "patch"
+    },
+    {
+      "type": "patch",
+      "comment": "Updating imports",
+      "packageName": "@pongoai/react-icon",
+      "email": "czearing@outlook.com",
+      "dependentChangeType": "patch"
+    },
+    {
+      "type": "patch",
+      "comment": "Updating imports",
+      "packageName": "@pongoai/react-text",
+      "email": "czearing@outlook.com",
+      "dependentChangeType": "patch"
+    },
+    {
+      "type": "patch",
+      "comment": "Updating imports",
+      "packageName": "@pongoai/react-theme",
+      "email": "czearing@outlook.com",
+      "dependentChangeType": "patch"
+    }
+  ]
+}

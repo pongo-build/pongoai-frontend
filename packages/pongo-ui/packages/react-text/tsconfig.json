@@ -1,11 +1,10 @@
 {
   "extends": "../../../../tsconfig.base.json",
-  "include": ["src", "Text.stories.tsx"],
   "compilerOptions": {
     "target": "esnext",
     "module": "CommonJS",
     "lib": ["esnext", "dom"],
-    "outDir": "dist",
+    "outDir": "lib",
     "jsx": "react",
     "declaration": true,
     "experimentalDecorators": true,
@@ -13,5 +12,6 @@
     "noUnusedLocals": true,
     "preserveConstEnums": true,
     "types": ["jest", "@types/jest"]
-  }
+  },
+  "exclude": ["lib"]
 }

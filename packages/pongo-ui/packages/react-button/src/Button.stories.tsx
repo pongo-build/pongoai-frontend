@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Button } from './index';
 import { FluentProvider } from '@fluentui/react-provider';
 import { makeStyles } from '@fluentui/react-make-styles';
-import { webLightTheme } from '../../react-theme/src/index';
+import { webLightTheme } from '@pongoai/react-theme';
 
 const useStyles = makeStyles({
   root: {

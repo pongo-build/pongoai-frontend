@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { useFluent } from '@fluentui/react-shared-contexts';
 import { makeStyles } from '@fluentui/react-make-styles';
-import { LogoIcon } from '../../../../../../pongo-ui/packages/react-icon/src';
-import { Header3, Text } from '../../../../../../pongo-ui/packages/react-text/src';
+// import { LogoIcon } from '../../../../../../pongo-ui/packages/react-icon/src';
+// import { Header3, Text } from '../../../../../../pongo-ui/packages/react-text/src';
 
 const useStyles = makeStyles({
   header: {
@@ -101,25 +101,17 @@ export const Header = () => {
 
   return (
     <div className={styles.header}>
-      <LogoIcon className={styles.headerLeftOuterContainer} />
+      {/* <LogoIcon className={styles.headerLeftOuterContainer} /> */}
       <span className={styles.headerTitle}>
-        <Text size={500} weight="bold">
+        {/* <Text size={500} weight="bold">
           Pongo AI
-        </Text>
+        </Text> */}
       </span>
       <span className={styles.headerInnerContainer} style={justifyContent}>
-        <span className={styles.headerButton}>
-          <Header3>Home</Header3>
-        </span>
-        <span className={styles.headerButton}>
-          <Header3>About</Header3>
-        </span>
-        <span className={styles.headerButton}>
-          <Header3>Create</Header3>
-        </span>
-        <span className={styles.headerButton}>
-          <Header3>News</Header3>
-        </span>
+        <span className={styles.headerButton}>{/* <Header3>Home</Header3> */}</span>
+        <span className={styles.headerButton}>{/* <Header3>About</Header3> */}</span>
+        <span className={styles.headerButton}>{/* <Header3>Create</Header3> */}</span>
+        <span className={styles.headerButton}>{/* <Header3>News</Header3> */}</span>
       </span>
       <span className={styles.headerRightOuterContainer} />
     </div>

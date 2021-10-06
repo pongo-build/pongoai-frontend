@@ -1,5 +1,5 @@
 {
-  "name": "pongo-dashboard",
+  "name": "@pongoai/pongo-dashboard",
   "version": "0.1.0",
   "private": true,
   "scripts": {

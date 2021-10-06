@@ -1,9 +1,8 @@
 import { makeStyles, mergeClasses } from '@fluentui/react-make-styles';
 import type { ButtonState } from './Button.types';
-import { Theme } from '../../../../react-theme/src/index';
 
 const useRootStyles = makeStyles({
-  root: (theme: Theme) => ({
+  root: (theme: any) => ({
     position: 'relative',
     display: 'inline-flex',
     alignItems: 'center',
@@ -48,7 +47,7 @@ const useRootStyles = makeStyles({
     cursor: 'not-allowed',
   },
 
-  outline: (theme: Theme) => ({
+  outline: (theme: any) => ({
     border: `2px solid ${theme.palette.neutral1Stroke}`,
     background: 'none',
 
@@ -61,13 +60,13 @@ const useRootStyles = makeStyles({
     },
   }),
 
-  outlineDisabled: (theme: Theme) => ({
+  outlineDisabled: (theme: any) => ({
     border: `2px solid ${theme.palette.neutral2Disabled}`,
     background: theme.palette.neutral2DisabledBackground,
     color: theme.palette.neutral2Disabled,
   }),
 
-  primary: (theme: Theme) => ({
+  primary: (theme: any) => ({
     border: `2px solid ${theme.palette.brand1Stroke}`,
     background: theme.palette.brand1,
     color: theme.palette.neutral2,
@@ -82,13 +81,13 @@ const useRootStyles = makeStyles({
     },
   }),
 
-  primaryDisabled: (theme: Theme) => ({
+  primaryDisabled: (theme: any) => ({
     border: `2px solid ${theme.palette.neutral2Disabled}`,
     background: theme.palette.neutral2DisabledBackground,
     color: theme.palette.neutral2Disabled,
   }),
 
-  subtle: (theme: Theme) => ({
+  subtle: (theme: any) => ({
     border: 'none',
     background: 'none',
     color: theme.palette.neutral1,
@@ -101,13 +100,13 @@ const useRootStyles = makeStyles({
     },
   }),
 
-  subtleDisabled: (theme: Theme) => ({
+  subtleDisabled: (theme: any) => ({
     border: 'none',
     background: 'none',
     color: theme.palette.neutral2Disabled,
   }),
 
-  transparent: (theme: Theme) => ({
+  transparent: (theme: any) => ({
     border: 'none',
     background: 'none',
     color: theme.palette.neutral1,
@@ -121,7 +120,7 @@ const useRootStyles = makeStyles({
     },
   }),
 
-  transparentDisabled: (theme: Theme) => ({
+  transparentDisabled: (theme: any) => ({
     border: 'none',
     background: 'none',
     color: theme.palette.neutral2Disabled,

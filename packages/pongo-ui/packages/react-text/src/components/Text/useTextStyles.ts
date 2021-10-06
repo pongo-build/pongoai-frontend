@@ -1,6 +1,6 @@
 import { makeStyles, mergeClasses } from '@fluentui/react-make-styles';
 import type { TextState } from './Text.types';
-import { Theme } from '../../../../react-theme/src/index';
+import { Theme } from '@pongoai/react-theme';
 
 const useRootStyles = makeStyles({
   root: {

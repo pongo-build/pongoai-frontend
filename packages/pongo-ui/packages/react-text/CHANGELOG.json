@@ -1,0 +1,20 @@
+{
+  "name": "@pongoai/react-text",
+  "entries": [
+    {
+      "date": "Tue, 05 Oct 2021 20:50:15 GMT",
+      "tag": "@pongoai/react-text_v0.0.0",
+      "version": "0.0.0",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongoai/react-text",
+            "comment": "Updating Header3 styles",
+            "commit": "aa19ee7b5bcbc21b4e4e0a1fdbd5311b304c430f"
+          }
+        ]
+      }
+    }
+  ]
+}

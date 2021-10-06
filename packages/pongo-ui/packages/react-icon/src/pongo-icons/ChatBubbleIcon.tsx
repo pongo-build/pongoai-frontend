@@ -1,10 +1,9 @@
 import * as React from 'react';
 import { createIcon } from '../utils/createIcon';
-import { Theme } from '../../../react-theme/src/index';
 import { makeStyles } from '@fluentui/react-make-styles';
 
 const useStyles = makeStyles({
-  root: (theme: Theme) => ({ fill: theme.palette.brand1 }),
+  root: (theme: any) => ({ fill: theme.palette.brand1 }),
 });
 
 const IconContent = () => {

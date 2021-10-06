@@ -5,21 +5,12 @@
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
   "typings": "lib/index.d.ts",
-  "private": true,
   "sideEffects": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/PongoAI/pongoai-frontend"
   },
   "license": "MIT",
-  "scripts": {
-    "start": "yarn storybook",
-    "build": "tsc",
-    "test": "jest",
-    "lint": "eslint",
-    "storybook": "start-storybook",
-    "build-storybook": "build-storybook"
-  },
   "scripts": {
     "start": "yarn storybook",
     "build": "tsc",
@@ -35,6 +26,7 @@
   "devDependencies": {
     "@fluentui/react-provider": "9.0.0-alpha.85",
     "@fluentui/react-conformance": "^0.5.1",
+    "@pongoai/react-theme": "^0.0.1",
     "@storybook/react": "^6.3.9",
     "@types/jest": "^27.0.2",
     "@types/react": "17.0.27",

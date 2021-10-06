@@ -1,5 +1,5 @@
 import { createText } from '../../utils/index';
-import { Theme } from '../../../../react-theme/src/index';
+import { Theme } from '@pongoai/react-theme';
 import { makeStyles } from '@fluentui/react-make-styles';
 
 const useStyles = makeStyles({
