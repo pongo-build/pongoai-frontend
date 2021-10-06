@@ -1,17 +1,8 @@
 {
   "extends": "../../../../tsconfig.base.json",
   "compilerOptions": {
-    "target": "esnext",
-    "module": "CommonJS",
-    "lib": ["esnext", "dom"],
     "outDir": "lib",
-    "jsx": "react",
-    "declaration": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "noUnusedLocals": true,
-    "preserveConstEnums": true,
-    "types": ["jest", "@types/jest"]
+    "typeRoots": ["node_modules/@types", "./typings"]
   },
-  "exclude": ["lib"]
+  "exclude": ["node_modules", "lib"]
 }

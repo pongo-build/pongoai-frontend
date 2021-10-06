@@ -1,15 +1,20 @@
 {
   "compilerOptions": {
-    "rootDir": ".",
-    "target": "ES2015",
     "module": "esnext",
-    "moduleResolution": "node",
-    "lib": ["ES2015", "dom"],
+    "target": "esnext",
     "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "noEmitOnError": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
-    "typeRoots": ["node_modules/@types", "./typings"],
+    "moduleResolution": "node",
+    "jsx": "react",
+    "lib": ["esnext", "dom"],
+    "types": ["jest", "@types/jest"],
+    "rootDir": ".",
     "baseUrl": ".",
     "paths": {
       "@pongoai/react-button": ["packages/pongo-ui/packages/react-button/src/index.ts"],
@@ -19,6 +24,5 @@
       "@pongoai/react-text": ["packages/pongo-ui/packages/react-text/src/index.ts"],
       "@pongoai/header": ["packages/pongo-shared-controls/packages/header/src/index.ts"]
     }
-  },
-  "exclude": ["node_modules"]
+  }
 }
