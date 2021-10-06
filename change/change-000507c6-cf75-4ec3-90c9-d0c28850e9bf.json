@@ -1,0 +1,32 @@
+{
+  "changes": [
+    {
+      "type": "none",
+      "comment": "Adding collectCoverage to jest config.",
+      "packageName": "@pongoai/react-button",
+      "email": "czearing@outlook.com",
+      "dependentChangeType": "none"
+    },
+    {
+      "type": "none",
+      "comment": "Adding collectCoverage to jest config.",
+      "packageName": "@pongoai/react-icon",
+      "email": "czearing@outlook.com",
+      "dependentChangeType": "none"
+    },
+    {
+      "type": "none",
+      "comment": "Adding collectCoverage to jest config.",
+      "packageName": "@pongoai/react-text",
+      "email": "czearing@outlook.com",
+      "dependentChangeType": "none"
+    },
+    {
+      "type": "none",
+      "comment": "Adding collectCoverage to jest config.",
+      "packageName": "@pongoai/react-theme",
+      "email": "czearing@outlook.com",
+      "dependentChangeType": "none"
+    }
+  ]
+}
