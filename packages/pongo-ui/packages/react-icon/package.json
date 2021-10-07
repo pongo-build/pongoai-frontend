@@ -14,6 +14,7 @@
   "scripts": {
     "start": "yarn storybook",
     "build": "tsc",
+    "bundle-size": "bundle-size measure",
     "test": "jest",
     "lint": "eslint",
     "storybook": "start-storybook",

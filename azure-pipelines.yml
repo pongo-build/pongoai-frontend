@@ -60,3 +60,23 @@ jobs:
       - script: |
           yarn chromatic --project-token=$(chromaticKey)
         displayName: chromatic
+
+  - job: BundleSize
+    displayName: Compare Bundle Size 📦
+    workspace:
+      clean: all
+    steps:
+      - template: .devops/templates/tools.yml
+
+      - script: |
+          yarn
+        displayName: yarn
+
+      - script: |
+          yarn bundle-size
+        displayName: bundle-size
+
+      - script: |
+          yarn bundle-size compare-reports --branch=$(System.PullRequest.TargetBranch) --output=markdown --verbose
+        displayName: compare bundle size with base (PR only)
+        condition: eq(variables.isPR, true)

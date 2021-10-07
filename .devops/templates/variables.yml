@@ -1,2 +1,2 @@
 variables:
-  pullRequestNumber: system.pullRequest.pullRequestNumber
+  pullRequestNumber: $(System.PullRequest.PullRequestNumber)
