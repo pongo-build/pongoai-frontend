@@ -42,25 +42,6 @@ jobs:
         env:
           NX_BRANCH: $(pullRequestNumber)
 
-  - job: Chromatic
-    displayName: Check for visual regressions 👁️
-    workspace:
-      clean: all
-    steps:
-      - template: .devops/templates/tools.yml
-
-      - script: |
-          cd apps && cd vr-tests
-        displayName: navigating to directory
-
-      - script: |
-          yarn
-        displayName: yarn
-
-      - script: |
-          yarn chromatic --project-token=$(chromaticKey)
-        displayName: chromatic
-
   - job: BundleSize
     displayName: Compare Bundle Size 📦
     workspace:
