@@ -3,14 +3,12 @@ import { useText } from './useText';
 import { renderText } from './renderText';
 import { useTextStyles } from './useTextStyles';
 import type { TextProps } from './Text.types';
+import type { ForwardRefComponent } from '@fluentui/react-utilities';
 
 /**
  * The Text control standardizes font styling across a webpage.
  */
-export const Text: React.FunctionComponent<TextProps> = React.forwardRef<
-  HTMLSpanElement | HTMLParagraphElement | HTMLHeadingElement | HTMLPreElement,
-  TextProps
->((props, ref) => {
+export const Text: ForwardRefComponent<TextProps> = React.forwardRef((props, ref) => {
   const state = useText(props, ref);
 
   useTextStyles(state);

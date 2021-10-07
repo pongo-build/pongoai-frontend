@@ -2,19 +2,27 @@ import * as React from 'react';
 import { renderText, useText, useTextStyles } from '../Text';
 import type { TextProps } from '../Text';
 import { mergeClasses } from '@fluentui/react-make-styles';
+import type { ForwardRefComponent } from '@fluentui/react-utilities';
 
-export const createText = (defaultProps: TextProps, useStyles: () => Record<any, string>, displayName: string) => {
-  const TextComponent = React.forwardRef<HTMLElement, TextProps>((props, ref) => {
+export type TextWrapperProps = Omit<TextProps, 'font' | 'size'>;
+
+export function createText(
+  defaultProps: TextProps,
+  useStyles: () => Record<any, string>,
+  displayName: string,
+): React.FunctionComponent<TextWrapperProps> {
+  const TextComponent: ForwardRefComponent<TextWrapperProps> = React.forwardRef((props, ref) => {
     const mergedProps = { ...defaultProps, ...props };
     const styles = useStyles();
     const state = useText(mergedProps as TextProps, ref);
 
     useTextStyles(state);
+
     state.root.className = mergeClasses(state.root.className, styles.root, mergedProps.className);
 
     return renderText(state);
   });
   TextComponent.displayName = displayName;
 
-  return React.memo(TextComponent);
-};
+  return TextComponent;
+}

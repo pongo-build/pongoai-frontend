@@ -40,6 +40,10 @@
     "@pongoai/react-text": {
       "root": "packages/pongo-ui/packages/react-text",
       "projectType": "library"
+    },
+    "vr-tests": {
+      "root": "apps/vr-tests",
+      "projectType": "application"
     }
   }
 }

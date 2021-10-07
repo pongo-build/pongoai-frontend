@@ -1,0 +1,39 @@
+{
+  "changes": [
+    {
+      "type": "none",
+      "comment": "Updating stories",
+      "packageName": "@pongoai/header",
+      "email": "czearing@outlook.com",
+      "dependentChangeType": "none"
+    },
+    {
+      "type": "none",
+      "comment": "Updating stories",
+      "packageName": "@pongoai/react-button",
+      "email": "czearing@outlook.com",
+      "dependentChangeType": "none"
+    },
+    {
+      "type": "none",
+      "comment": "Updating stories",
+      "packageName": "@pongoai/react-icon",
+      "email": "czearing@outlook.com",
+      "dependentChangeType": "none"
+    },
+    {
+      "type": "none",
+      "comment": "Updating stories",
+      "packageName": "@pongoai/react-text",
+      "email": "czearing@outlook.com",
+      "dependentChangeType": "none"
+    },
+    {
+      "type": "none",
+      "comment": "Updating stories",
+      "packageName": "@pongoai/react-theme",
+      "email": "czearing@outlook.com",
+      "dependentChangeType": "none"
+    }
+  ]
+}

@@ -3,7 +3,7 @@ import { isConformant } from '../../common/isConformant';
 
 describe('Text', () => {
   isConformant({
-    Component: Text,
+    Component: Text as any,
     displayName: 'Text',
     // TODO: Enable all tests
     disabledTests: [
@@ -13,5 +13,10 @@ describe('Text', () => {
       'component-handles-ref',
       'component-renders',
     ],
+    testOptions: {
+      'make-styles-overrides-win': {
+        callCount: 1,
+      },
+    } as any,
   });
 });

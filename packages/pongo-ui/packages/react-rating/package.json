@@ -21,8 +21,8 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@fluentui/react-utilities": "^9.0.0-alpha.56",
-    "@fluentui/react-make-styles": "^9.0.0-alpha.74"
+    "@fluentui/react-utilities": "9.0.0-beta.1",
+    "@fluentui/react-make-styles": "9.0.0-beta.1"
   },
   "devDependencies": {
     "@pongoai/react-theme": "^0.0.2",

@@ -5,6 +5,7 @@ trigger: none
 
 variables:
   - template: .devops/templates/variables.yml
+  - group: pongo-variables
 
 pool: Default
 
@@ -34,3 +35,22 @@ jobs:
       - script: |
           yarn test
         displayName: test
+
+  - job: Chromatic
+    displayName: Check for visual regressions 👁️
+    workspace:
+      clean: all
+    steps:
+      - template: .devops/templates/tools.yml
+
+      - script: |
+          cd apps && cd vr-tests
+        displayName: navigating to directory
+
+      - script: |
+          yarn
+        displayName: yarn
+
+      - script: |
+          yarn chromatic --project-token=$(chromaticKey)
+        displayName: chromatic

@@ -21,7 +21,7 @@ export const useText = (props: TextProps, ref: React.Ref<HTMLElement>): TextStat
     underline,
     strikethrough,
     components: {
-      root: as,
+      root: 'span',
     },
     root: getNativeElementProps(as, {
       ref,
