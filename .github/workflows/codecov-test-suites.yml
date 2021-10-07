@@ -1,15 +1,16 @@
-name: Report Coverage
+name: 'Report Test Coverage 📊'
 
 on:
+  pull_request:
   push:
-    branches:
-      - master
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - run: yarn
       - run: yarn test --coverage
-      - run: yarn codecov --token=${{ secrets.CODECOV_TOKEN }} --disable=gcov -f ./coverage/lcov.info
+      - run: bash <(curl -s https://codecov.io/bash)

@@ -37,7 +37,7 @@ jobs:
           NX_BRANCH: $(pullRequestNumber)
 
       - script: |
-          yarn test
+          yarn test --coverage
         displayName: test
         env:
           NX_BRANCH: $(pullRequestNumber)
