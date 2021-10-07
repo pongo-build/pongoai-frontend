@@ -27,14 +27,20 @@ jobs:
       - script: |
           yarn lint
         displayName: lint
+        env:
+          NX_BRANCH: $(pullRequestNumber)
 
       - script: |
           yarn build
         displayName: build
+        env:
+          NX_BRANCH: $(pullRequestNumber)
 
       - script: |
           yarn test
         displayName: test
+        env:
+          NX_BRANCH: $(pullRequestNumber)
 
   - job: Chromatic
     displayName: Check for visual regressions 👁️

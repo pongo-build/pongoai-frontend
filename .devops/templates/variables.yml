@@ -1,2 +1,2 @@
 variables:
-  NX_BRANCH: System.PullRequestNumber
+  pullRequestNumber: system.pullRequest.pullRequestNumber
