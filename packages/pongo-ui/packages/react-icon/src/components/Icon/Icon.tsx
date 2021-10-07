@@ -11,3 +11,4 @@ export const Icon = React.forwardRef<HTMLElement, IconProps>((props, ref) => {
 
   return renderIcon(state);
 });
+Icon.displayName = 'Icon';
