@@ -1,20 +1,21 @@
-flags:
-  react-button:
-    paths:
-      - packages/pongo-ui/packages/react-button
-    carryforward: true
-
 coverage:
   status:
     project:
-      default:
-        flags:
-          - react-button
+      default: off
       react-button:
+        target: auto
         flags:
           - react-button
 
 comment:
-  layout: 'reach,diff,flags,files,footer'
+  layout: 'reach, diff, flags, files'
   behavior: default
-  require_changes: no
+  require_changes: false
+  require_base: yes
+  require_head: yes
+  branches: null
+
+flags:
+  react-button:
+    paths:
+      - packages/pongo-ui/packages/react-button
