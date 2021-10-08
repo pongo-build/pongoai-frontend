@@ -11,6 +11,7 @@
     "start": "nx run pongo-landing:serve",
     "build": "nx run-many --target=build --all",
     "bundle-size": "nx run-many --target=bundle-size --all",
+    "coverage": "nx run-many --target=coverage --all",
     "change": "beachball change --scope \"!packages/pongo-ui/*\"",
     "checkchange": "beachball check  --scope \"!packages/pongo-ui/*\" --changehint \"Run 'yarn change' to generate a change file\"",
     "publish:beachball": "beachball publish -b origin/master --access public -y",

@@ -16,6 +16,7 @@
     "start": "yarn storybook",
     "build": "tsc",
     "test": "jest",
+    "coverage": "jest --coverage",
     "lint": "eslint",
     "storybook": "start-storybook",
     "build-storybook": "build-storybook"
