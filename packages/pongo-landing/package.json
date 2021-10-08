@@ -1,5 +1,5 @@
 {
-  "name": "pongo-landing",
+  "name": "@pongoai/pongo-landing",
   "version": "0.1.0",
   "private": true,
   "scripts": {
