@@ -3,14 +3,21 @@ import type { ButtonState } from './Button.types';
 
 export const useButtonState = (state: ButtonState): ButtonState => {
   const { disabled } = state;
-  const { as, tabIndex, role, onClick, onKeyDown, onKeyUp } = state.root;
+  const {
+    as,
+    tabIndex,
+    role,
+    onClick: onClickCallback,
+    onKeyDown: onKeyDownCallback,
+    onKeyUp: onKeyUpCallback,
+  } = state.root;
 
   /**
    * Button event callback for when the root is not rendered as a button (EX: anchor).
    */
   const onButtonClick = useEventCallback((ev: any) => {
     if (!disabled && !ev.isDefaultPrevented()) {
-      onClick?.(ev);
+      onClickCallback?.(ev);
     } else {
       ev.preventDefault();
       ev.stopPropagation();
@@ -22,7 +29,7 @@ export const useButtonState = (state: ButtonState): ButtonState => {
    */
   const onButtonKeydown = useEventCallback((ev: any) => {
     if (!disabled && !ev.isDefaultPrevented()) {
-      onKeyDown?.(ev);
+      onKeyDownCallback?.(ev);
       switch (ev.key) {
         case 'Enter':
           ev.preventDefault();
@@ -44,7 +51,7 @@ export const useButtonState = (state: ButtonState): ButtonState => {
    */
   const onButtonKeyup = useEventCallback((ev: any) => {
     if (!disabled && !ev.isDefaultPrevented()) {
-      onKeyUp?.(ev);
+      onKeyUpCallback?.(ev);
       switch (ev.key) {
         case 'Enter':
           ev.preventDefault();

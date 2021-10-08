@@ -19,6 +19,7 @@ const IconContent = () => {
 export const ChatBubbleIcon = createIcon(
   {
     children: <IconContent />,
+    'aria-label': 'Chat bubble',
   },
   'ChatBubble',
 );

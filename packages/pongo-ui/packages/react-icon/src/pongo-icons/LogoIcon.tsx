@@ -19,6 +19,7 @@ export const LogoIcon = createIcon(
         </g>
       </svg>
     ),
+    'aria-label': 'Pongo AI logo',
   },
   'LogoIcon',
 );
