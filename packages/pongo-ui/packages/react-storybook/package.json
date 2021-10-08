@@ -1,10 +1,11 @@
 {
-  "name": "@pongoai/react-rating",
+  "name": "@pongoai/react-storybook",
   "version": "0.0.0-alpha.0",
-  "description": "A Rating control used to provide insight on a users review for a product.",
+  "description": "Storybook addon used within PongoAI.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
   "typings": "lib/index.d.ts",
+  "private": true,
   "sideEffects": false,
   "repository": {
     "type": "git",
@@ -14,8 +15,6 @@
   "scripts": {
     "start": "yarn storybook",
     "build": "tsc",
-    "test": "jest",
-    "coverage": "jest --coverage",
     "lint": "eslint",
     "storybook": "start-storybook",
     "build-storybook": "build-storybook"
