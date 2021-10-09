@@ -5,9 +5,10 @@ import { Theme } from '@pongoai/react-theme';
 const rootClassName = 'pongoai-Switch-root';
 const trackClassName = 'pongoai-Switch-track';
 const thumbClassName = 'pongoai-Switch-thumb';
+const inputClassName = 'pongoai-Switch-input';
 
 const useRootStyles = makeStyles({
-  root: theme => ({
+  root: {
     '--switch-width': '42px',
     '--switch-height': '26px',
     '--switch-thumb-size': '20px',
@@ -21,21 +22,7 @@ const useRootStyles = makeStyles({
     userSelect: 'none',
     touchAction: 'none',
     verticalAlign: 'bottom',
-
-    '&:focus-visible': {
-      ':after': {
-        content: "''",
-        position: 'absolute',
-        top: '-6px',
-        right: '-6px',
-        bottom: '-6px',
-        left: '-6px',
-        boxSizing: 'border-box',
-        border: '1px solid black',
-        borderRadius: '2px',
-      },
-    },
-  }),
+  },
 
   unchecked: (theme: Theme) => ({
     ':hover .pongoai-Switch-thumb': {
@@ -84,12 +71,11 @@ const useRootStyles = makeStyles({
 
   disabled: {
     cursor: 'not-allowed',
-    pointerEvents: 'none',
   },
 });
 
 const useTrackStyles = makeStyles({
-  track: theme => ({
+  track: {
     position: 'absolute',
     width: '100%',
     height: '100%',
@@ -120,7 +106,7 @@ const useTrackStyles = makeStyles({
       content: "''",
       opacity: 'var(--switch-checked-opacity)',
     },
-  }),
+  },
 
   unchecked: (theme: Theme) => ({
     ':before': {
@@ -136,16 +122,16 @@ const useTrackStyles = makeStyles({
     },
   }),
 
-  disabledUnchecked: theme => ({
+  disabledUnchecked: (theme: Theme) => ({
     ':before': {
-      border: `1px solid ${theme.alias.color.neutral.neutralStrokeDisabled}`,
+      border: `1px solid ${theme.palette.neutral2Disabled}`,
     },
   }),
 
-  disabledChecked: theme => ({
+  disabledChecked: (theme: Theme) => ({
     ':after': {
-      border: `1px solid ${theme.alias.color.neutral.transparentStrokeDisabled}`,
-      background: theme.alias.color.neutral.neutralBackgroundDisabled,
+      border: `1px solid ${theme.palette.neutral2Disabled}`,
+      background: theme.palette.neutral2Disabled,
     },
   }),
 });
@@ -163,7 +149,7 @@ const useThumbWrapperStyles = makeStyles({
 });
 
 const useThumbStyles = makeStyles({
-  thumb: theme => ({
+  thumb: {
     position: 'absolute',
     width: 'var(--switch-thumb-size)',
     height: 'var(--switch-thumb-size)',
@@ -196,7 +182,7 @@ const useThumbStyles = makeStyles({
       content: "''",
       opacity: 'var(--switch-checked-opacity)',
     },
-  }),
+  },
 
   unchecked: (theme: Theme) => ({
     ':before': {
@@ -212,14 +198,14 @@ const useThumbStyles = makeStyles({
 
   disabledUnchecked: (theme: Theme) => ({
     ':before': {
-      border: `1px solid ${theme.alias.color.neutral.neutralForegroundDisabled}`,
-      background: theme.alias.color.neutral.neutralBackground1,
+      border: `1px solid ${theme.palette.neutral2Disabled}`,
+      background: theme.palette.neutral2Disabled,
     },
   }),
 
   disabledChecked: (theme: Theme) => ({
     ':after': {
-      background: theme.alias.color.neutral.neutralForegroundDisabled,
+      background: theme.palette.neutral2,
     },
   }),
 });
@@ -288,7 +274,7 @@ export const useSwitchStyles = (state: SwitchState) => {
 
   state.activeRail.className = mergeClasses(activeRailStyles.activeRail, state.activeRail.className);
 
-  state.input.className = mergeClasses(inputStyles.input, state.input.className);
+  state.input.className = mergeClasses(inputClassName, inputStyles.input, state.input.className);
 
   return state;
 };

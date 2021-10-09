@@ -21,12 +21,12 @@ const useRootStyles = makeStyles({
       '&:after': {
         content: "''",
         position: 'absolute',
-        top: '-6px',
-        right: '-6px',
-        bottom: '-6px',
-        left: '-6px',
+        top: '-8px',
+        right: '-8px',
+        bottom: '-8px',
+        left: '-8px',
         boxSizing: 'border-box',
-        border: '1px solid black',
+        border: '2px solid black',
         borderRadius: '2px',
       },
     },
@@ -48,15 +48,15 @@ const useRootStyles = makeStyles({
   },
 
   outline: (theme: any) => ({
-    border: `2px solid ${theme.palette.neutral1Stroke}`,
+    border: `2px solid ${theme.palette.neutral3}`,
     background: 'none',
 
     '&:hover': {
-      borderColor: theme.palette.neutral1StrokeHover,
+      borderColor: theme.palette.neutral3Hover,
     },
     '&:active': {
       background: theme.palette.neutral2Active,
-      borderColor: theme.palette.neutral1StrokeActive,
+      borderColor: theme.palette.neutral3Active,
     },
   }),
 

@@ -29,6 +29,7 @@
     "@pongoai/react-theme": { "implicitDependencies": [] },
     "@pongoai/react-icon": { "implicitDependencies": [] },
     "@pongoai/react-text": { "implicitDependencies": [] },
+    "@pongoai/react-switch": { "implicitDependencies": [] },
     "vr-tests": { "implicitDependencies": [] }
   }
 }

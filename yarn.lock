@@ -1588,6 +1588,17 @@
     "@fluentui/react-theme" "9.0.0-beta.1"
     tslib "^2.1.0"
 
+"@fluentui/react-switch@9.0.0-beta.1":
+  version "9.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-switch/-/react-switch-9.0.0-beta.1.tgz#f9851103a83a898c4214b838e9d1b4528374254f"
+  integrity sha512-Dvs5fRK+y2kIcQOyOyOE2HtpwC81tmsyTozDVzgwk6KWm/3xu3kF+KoiOwFOqJ0LGgDmcBLU4XAF4FO5BbY8oQ==
+  dependencies:
+    "@fluentui/react-make-styles" "9.0.0-beta.1"
+    "@fluentui/react-shared-contexts" "9.0.0-beta.1"
+    "@fluentui/react-tabster" "9.0.0-beta.1"
+    "@fluentui/react-utilities" "9.0.0-beta.1"
+    tslib "^2.1.0"
+
 "@fluentui/react-tabster@9.0.0-alpha.68":
   version "9.0.0-alpha.68"
   resolved "https://registry.npmjs.org/@fluentui/react-tabster/-/react-tabster-9.0.0-alpha.68.tgz"
@@ -2512,10 +2523,10 @@
     "@fluentui/react-make-styles" "9.0.0-beta.1"
     "@fluentui/react-utilities" "9.0.0-beta.1"
 
-"@pongoai/react-theme@0.0.4", "@pongoai/react-theme@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@pongoai/react-theme/-/react-theme-0.0.4.tgz#54aab7263b8185a09d29451323f2e4af1ca23be3"
-  integrity sha512-dNIr7lKmmkooAxqJeZj8Dh98ZbzuOLyCfmGIbbyZz+MtYP67evkhKelClDTnatpfbZLtqaReSq9K1baDmZqsxA==
+"@pongoai/react-theme@0.0.5", "@pongoai/react-theme@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@pongoai/react-theme/-/react-theme-0.0.5.tgz#1979836a7f690a14bd4dedaaaf7e37a516e96082"
+  integrity sha512-LE5A6WK7yvK1TpFZ/c8NUGxADW+VXXoLWlbTZzcAHdZ++zeH3lPsiEfVzrU4if6LW6A4/ebzHTsUbgWjGKmqnA==
 
 "@popperjs/core@^2.5.4", "@popperjs/core@^2.6.0":
   version "2.10.1"

@@ -1326,6 +1326,19 @@
     tabster "^1.0.0"
     tslib "^2.1.0"
 
+"@fluentui/react-tabster@9.0.0-beta.1":
+  version "9.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-tabster/-/react-tabster-9.0.0-beta.1.tgz#a3f1a66fdd90dfe5491e9de8772108de6485a8c0"
+  integrity sha512-APotpzHJ9Wz0nwO5alJOcKRkCqhwoy1zKJANAm7DEAdudtVHDHgZoyKj+20QoKXnqf4olSmuSZNVEmnEgFNc/w==
+  dependencies:
+    "@fluentui/make-styles" "9.0.0-beta.1"
+    "@fluentui/react-make-styles" "9.0.0-beta.1"
+    "@fluentui/react-shared-contexts" "9.0.0-beta.1"
+    "@fluentui/react-utilities" "9.0.0-beta.1"
+    keyborg "^1.0.0"
+    tabster "^1.0.0"
+    tslib "^2.1.0"
+
 "@fluentui/react-theme@9.0.0-alpha.24":
   version "9.0.0-alpha.24"
   resolved "https://registry.yarnpkg.com/@fluentui/react-theme/-/react-theme-9.0.0-alpha.24.tgz#87bf05949e9c718a12e477cb37a152896106c0f9"
