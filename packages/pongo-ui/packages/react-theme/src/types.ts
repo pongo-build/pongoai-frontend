@@ -16,14 +16,14 @@ export type ColorTokens = {
   neutral1: string;
   neutral1Hover: string;
   neutral1Active: string;
-  neutral1Stroke: string;
-  neutral1StrokeHover: string;
-  neutral1StrokeActive: string;
   neutral2: string;
   neutral2Hover: string;
   neutral2Active: string;
   neutral2Disabled: string;
   neutral2DisabledBackground: string;
+  neutral3: string;
+  neutral3Hover: string;
+  neutral3Active: string;
 };
 
 export type Fonts = {

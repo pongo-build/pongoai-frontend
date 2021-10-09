@@ -19,6 +19,6 @@
     "typescript": "4.4.3",
     "@fluentui/react-provider": "9.0.0-alpha.85",
     "@pongoai/react-button": "^0.0.4",
-    "@pongoai/react-theme": "^0.0.2"
+    "@pongoai/react-theme": "^0.0.5"
   }
 }

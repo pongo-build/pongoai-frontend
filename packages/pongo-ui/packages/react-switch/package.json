@@ -1,7 +1,7 @@
 {
-  "name": "@pongoai/react-rating",
-  "version": "0.0.0-alpha.0",
-  "description": "A Rating control used to provide insight on a users review for a product.",
+  "name": "@pongoai/react-switch",
+  "version": "0.0.0",
+  "description": "The Switch allows users to toggle a value between an on and off state.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -14,6 +14,7 @@
   "scripts": {
     "start": "yarn storybook",
     "build": "tsc",
+    "bundle-size": "bundle-size measure",
     "test": "jest",
     "coverage": "jest --coverage",
     "lint": "eslint",
@@ -21,12 +22,11 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@fluentui/react-utilities": "9.0.0-beta.1",
-    "@fluentui/react-make-styles": "9.0.0-beta.1"
+    "@fluentui/react-switch": "9.0.0-beta.1",
+    "@fluentui/react-make-styles": "9.0.0-beta.1",
+    "@fluentui/react-utilities": "9.0.0-beta.1"
   },
   "devDependencies": {
-    "@pongoai/react-theme": "^0.0.2",
-    "@fluentui/react-provider": "9.0.0-alpha.85",
     "@fluentui/react-conformance": "^0.5.1",
     "@storybook/react": "^6.3.9",
     "@types/jest": "^27.0.2",

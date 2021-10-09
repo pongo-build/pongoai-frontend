@@ -14,7 +14,7 @@
   "devDependencies": {},
   "dependencies": {
     "chromatic": "^5.10.2",
-    "@pongoai/react-theme": "0.0.2",
+    "@pongoai/react-theme": "0.0.5",
     "@pongoai/react-text": "0.0.4",
     "@pongoai/react-icon": "0.0.1",
     "@fluentui/react-provider": "9.0.0-alpha.85",

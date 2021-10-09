@@ -2512,10 +2512,10 @@
     "@fluentui/react-make-styles" "9.0.0-beta.1"
     "@fluentui/react-utilities" "9.0.0-beta.1"
 
-"@pongoai/react-theme@0.0.2", "@pongoai/react-theme@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@pongoai/react-theme/-/react-theme-0.0.2.tgz#b6569ba6b203d14f48bf87f46af61277230ecb5f"
-  integrity sha512-hJocAthxuWLVN/cMbGGwgHkMJ1xnTsyUbYH8TUEGyyqikO7rNDV9W/uF+IPIPRxhHEjy8TOUxc5syx0FXctTlw==
+"@pongoai/react-theme@0.0.4", "@pongoai/react-theme@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@pongoai/react-theme/-/react-theme-0.0.4.tgz#54aab7263b8185a09d29451323f2e4af1ca23be3"
+  integrity sha512-dNIr7lKmmkooAxqJeZj8Dh98ZbzuOLyCfmGIbbyZz+MtYP67evkhKelClDTnatpfbZLtqaReSq9K1baDmZqsxA==
 
 "@popperjs/core@^2.5.4", "@popperjs/core@^2.6.0":
   version "2.10.1"

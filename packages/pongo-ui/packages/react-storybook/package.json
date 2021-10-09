@@ -24,7 +24,7 @@
     "@fluentui/react-make-styles": "9.0.0-beta.1"
   },
   "devDependencies": {
-    "@pongoai/react-theme": "^0.0.2",
+    "@pongoai/react-theme": "^0.0.5",
     "@fluentui/react-provider": "9.0.0-alpha.85",
     "@fluentui/react-conformance": "^0.5.1",
     "@storybook/react": "^6.3.9",
