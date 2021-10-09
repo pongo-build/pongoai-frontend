@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'react-button',
+  displayName: 'react-switch',
   preset: 'ts-jest',
   collectCoverage: true,
   setupFilesAfterEnv: ['./config/tests.js'],
