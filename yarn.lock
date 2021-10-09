@@ -2515,6 +2515,15 @@
     "@fluentui/react-make-styles" "9.0.0-beta.1"
     "@fluentui/react-utilities" "9.0.0-beta.1"
 
+"@pongoai/react-switch@0.0.0":
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/@pongoai/react-switch/-/react-switch-0.0.0.tgz#b3a370e885ccaf3d4d5873ece4d79913722cbfa3"
+  integrity sha512-mnuz6cszpKyumkRDEkVBAKCD3NesbwrnZs6+WzNoxeWjul5DM2Mh2Qnel0SSQv5J4KmWSewTPg5dr6ImsaQYVQ==
+  dependencies:
+    "@fluentui/react-make-styles" "9.0.0-beta.1"
+    "@fluentui/react-switch" "9.0.0-beta.1"
+    "@fluentui/react-utilities" "9.0.0-beta.1"
+
 "@pongoai/react-text@0.0.4":
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/@pongoai/react-text/-/react-text-0.0.4.tgz#ae810c62f54f9f0b42717518b8d0da03556a85d0"
