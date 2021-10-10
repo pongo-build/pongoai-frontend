@@ -25,6 +25,10 @@
       "root": "packages/pongo-ui/packages/react-button",
       "projectType": "library"
     },
+    "@pongoai/react-checkbox": {
+      "root": "packages/pongo-ui/packages/react-checkbox",
+      "projectType": "library"
+    },
     "@pongoai/react-rating": {
       "root": "packages/pongo-ui/packages/react-rating",
       "projectType": "library"
