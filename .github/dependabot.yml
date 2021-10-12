@@ -1,34 +1,34 @@
-version: 2
-updates:
-  - package-ecosystem: 'npm'
-    directory: '/'
-    schedule:
-      interval: 'daily'
-  - package-ecosystem: 'npm'
-    directory: '/packages/pongo-dashboard'
-    schedule:
-      interval: 'daily'
-  - package-ecosystem: 'npm'
-    directory: '/packages/pongo-landing'
-    schedule:
-      interval: 'daily'
-  - package-ecosystem: 'npm'
-    directory: '/packages/pongo-ui/packages/react-button'
-    schedule:
-      interval: 'daily'
-  - package-ecosystem: 'npm'
-    directory: '/packages/pongo-ui/packages/react-icon'
-    schedule:
-      interval: 'daily'
-  - package-ecosystem: 'npm'
-    directory: '/packages/pongo-ui/packages/react-rating'
-    schedule:
-      interval: 'daily'
-  - package-ecosystem: 'npm'
-    directory: '/packages/pongo-ui/packages/react-text'
-    schedule:
-      interval: 'daily'
-  - package-ecosystem: 'npm'
-    directory: '/packages/pongo-ui/packages/react-theme'
-    schedule:
-      interval: 'daily'
+# version: 2
+# updates:
+#   - package-ecosystem: 'npm'
+#     directory: '/'
+#     schedule:
+#       interval: 'daily'
+#   - package-ecosystem: 'npm'
+#     directory: '/packages/pongo-dashboard'
+#     schedule:
+#       interval: 'daily'
+#   - package-ecosystem: 'npm'
+#     directory: '/packages/pongo-landing'
+#     schedule:
+#       interval: 'daily'
+#   - package-ecosystem: 'npm'
+#     directory: '/packages/pongo-ui/packages/react-button'
+#     schedule:
+#       interval: 'daily'
+#   - package-ecosystem: 'npm'
+#     directory: '/packages/pongo-ui/packages/react-icon'
+#     schedule:
+#       interval: 'daily'
+#   - package-ecosystem: 'npm'
+#     directory: '/packages/pongo-ui/packages/react-rating'
+#     schedule:
+#       interval: 'daily'
+#   - package-ecosystem: 'npm'
+#     directory: '/packages/pongo-ui/packages/react-text'
+#     schedule:
+#       interval: 'daily'
+#   - package-ecosystem: 'npm'
+#     directory: '/packages/pongo-ui/packages/react-theme'
+#     schedule:
+#       interval: 'daily'
