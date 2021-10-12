@@ -45,6 +45,10 @@
       "root": "packages/pongo-ui/packages/react-text",
       "projectType": "library"
     },
+    "@pongoai/react-textfield": {
+      "root": "packages/pongo-ui/packages/react-textfield",
+      "projectType": "library"
+    },
     "@pongoai/react-switch": {
       "root": "packages/pongo-ui/packages/react-switch",
       "projectType": "library"
