@@ -3,7 +3,7 @@ import { getNativeElementProps, resolveShorthand, useId } from '@fluentui/react-
 import { useRatingState } from './useRatingState';
 import type { RatingProps, RatingSlots, RatingState } from './Rating.types';
 
-export const ratingShorthandProps: (keyof RatingSlots)[] = ['root', 'star', 'input'];
+export const ratingShorthandProps: (keyof RatingSlots)[] = ['root', 'starWrapper', 'input'];
 
 export const useRating = (props: RatingProps, ref: React.Ref<HTMLElement>): RatingState => {
   const {
@@ -16,7 +16,7 @@ export const useRating = (props: RatingProps, ref: React.Ref<HTMLElement>): Rati
     onChange,
 
     // Slots
-    star,
+    starWrapper,
     input,
   } = props;
 
@@ -29,7 +29,7 @@ export const useRating = (props: RatingProps, ref: React.Ref<HTMLElement>): Rati
     onChange,
     components: {
       root: 'span',
-      star: 'span',
+      starWrapper: 'span',
       input: 'input',
     },
     root: getNativeElementProps('span', {
@@ -37,7 +37,7 @@ export const useRating = (props: RatingProps, ref: React.Ref<HTMLElement>): Rati
       ...props,
       id: useId('rating-', props.id),
     }),
-    star: resolveShorthand(star, { required: true }),
+    starWrapper: resolveShorthand(starWrapper, { required: true }),
     input: resolveShorthand(input, {
       required: true,
       defaultProps: {

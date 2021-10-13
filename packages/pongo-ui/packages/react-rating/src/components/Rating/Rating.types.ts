@@ -7,9 +7,9 @@ export type RatingSlots = {
   root: IntrinsicShorthandProps<'span'>;
 
   /**
-   * The intractable star icons on the Rating.
+   * The intractable star icon wrapper for the Rating.
    */
-  star: IntrinsicShorthandProps<'span'>;
+  starWrapper: IntrinsicShorthandProps<'span'>;
 
   /**
    * The hidden input used along side the Rating's stars.

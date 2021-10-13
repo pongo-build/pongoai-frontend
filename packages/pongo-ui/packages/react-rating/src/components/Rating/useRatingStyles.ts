@@ -3,55 +3,41 @@ import type { RatingState } from './Rating.types';
 
 const useRootStyles = makeStyles({
   root: {
+    '--rating-star-size': '45px',
     position: 'relative',
     display: 'inline-flex',
-    justifyContent: 'center',
-    alignItems: 'center',
     userSelect: 'none',
     touchAction: 'none',
-    verticalAlign: 'middle',
-    width: '120px',
-    height: '25px',
-    background: 'blue',
-    '--rating-star-size': '20px',
-  },
-
-  enabled: {
-    cursor: 'pointer',
-  },
-
-  disabled: {
-    cursor: 'not-allowed',
+    verticalAlign: 'bottom',
+    width: '270px',
+    height: 'var(--rating-star-size)',
+    flexDirection: 'column',
   },
 });
 
 const useStarStyles = makeStyles({
   star: {
-    position: 'absolute',
-    width: 'var(--rating-star-size)',
-    height: 'var(--rating-star-size)',
-    transition: 'background .1s cubic-bezier(0.33, 0.0, 0.67, 1)',
-    touchAction: 'none',
-    pointerEvents: 'none',
-    boxSizing: 'border-box',
-    background: 'green',
-  },
+    position: 'relative',
+    display: 'grid',
+    outline: 'none',
+    whiteSpace: 'nowrap',
+    gridTemplateColumns: '0% 25% 25% 25% 25%',
+    marginLeft: 'calc(var(--rating-star-size) / 2)',
+    marginRight: 'calc(var(--rating-star-size) / 2)',
 
-  enabled: {
-    ':before': {
-      backgroundColor: 'green',
-    },
-    ':after': {
-      backgroundColor: 'red',
-    },
-  },
-
-  disabled: {
-    ':before': {
-      backgroundColor: 'green',
-    },
-    ':after': {
-      backgroundColor: 'red',
+    '> span': {
+      display: 'flex',
+      flexDirection: 'column',
+      transform: 'translateX(50%)',
+      alignItems: 'center',
+      ':hover': {
+        width: '500px',
+      },
+      '> svg': {
+        width: '45px',
+        height: '45px',
+        strokeWidth: '3',
+      },
     },
   },
 });
@@ -68,26 +54,34 @@ const useInputStyle = makeStyles({
     width: '100%',
     height: '100%',
   },
+
+  enabled: {
+    cursor: 'pointer',
+  },
+
+  disabled: {
+    cursor: 'not-allowed',
+  },
 });
 
 export const useRatingStyles = (state: RatingState) => {
   const rootStyles = useRootStyles();
-  const starStyles = useStarStyles();
+  const starWrapperStyles = useStarStyles();
   const inputStyles = useInputStyle();
 
-  state.root.className = mergeClasses(
-    rootStyles.root,
-    state.disabled ? rootStyles.disabled : rootStyles.enabled,
-    state.root.className,
+  state.root.className = mergeClasses(rootStyles.root, state.root.className);
+
+  state.starWrapper.className = mergeClasses(
+    starWrapperStyles.star,
+    state.disabled ? starWrapperStyles.disabled : starWrapperStyles.enabled,
+    state.starWrapper.className,
   );
 
-  state.star.className = mergeClasses(
-    starStyles.star,
-    state.disabled ? starStyles.disabled : starStyles.enabled,
-    state.star.className,
+  state.input.className = mergeClasses(
+    inputStyles.input,
+    state.disabled ? inputStyles.disabled : inputStyles.enabled,
+    state.input.className,
   );
-
-  state.input.className = mergeClasses(inputStyles.input, state.input.className);
 
   return state;
 };
