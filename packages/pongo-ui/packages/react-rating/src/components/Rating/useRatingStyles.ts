@@ -30,9 +30,6 @@ const useStarStyles = makeStyles({
       flexDirection: 'column',
       transform: 'translateX(50%)',
       alignItems: 'center',
-      ':hover': {
-        width: '500px',
-      },
       '> svg': {
         width: '45px',
         height: '45px',

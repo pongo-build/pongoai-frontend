@@ -10,8 +10,7 @@ export const BasicRatingExample = () => {
 
   return (
     <div>
-      <Rating value={ratingValue} onChange={onRatingChange} />
-      <h1>{ratingValue}</h1>
+      <Rating />
     </div>
   );
 };
